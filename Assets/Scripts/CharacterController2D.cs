@@ -17,7 +17,7 @@ public class CharacterController2D : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		float moveHorizontal = Input.GetAxisRaw("Horizontal"); //Genom att använda GetAxisRaW får man en mer robotic movement, ingen acceleration
+		float moveHorizontal = Input.GetAxisRaw("Horizontal"); //Using GetAxisRaW to get a more robotic movement, no acceleration
 		float moveVertical = Input.GetAxisRaw ("Vertical");
 
 		//Use the two floats to create a new Vector2 variable movement
