@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponTEST : MonoBehaviour {
+public class Weapon : MonoBehaviour {
 
     public float offset;
 
