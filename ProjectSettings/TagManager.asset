@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon
+  - Health
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,8 +19,8 @@ TagManager:
   - 
   - Weapon
   - 
-  - 
-  - 
+  - Enemy
+  - Enviroment
   - 
   - 
   - 
