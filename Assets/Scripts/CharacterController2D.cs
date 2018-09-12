@@ -24,13 +24,13 @@ public class CharacterController2D : MonoBehaviour {
 		Vector2 movementInput = new Vector2(moveHorizontal, moveVertical);
 
 		//Call the AddForce function of our rigid body supplying movement multiplied by speed to move our player
-		//rb2d.AddForce (movementInput*movementSpeed);
+		//rb2d.AddForce (movementInput*movementSpeed)
 		//kommentera bort
 		moveVelocity = movementInput.normalized*movementSpeed;
 		
 	}
 
-	//Alternativt ifall vi vill att karaktären ska vara kinetic
+	//Another case: if we want the character to be kinetic
 	void FixedUpdate()
 	{
 		rb2d.MovePosition (rb2d.position + moveVelocity * Time.fixedDeltaTime);
