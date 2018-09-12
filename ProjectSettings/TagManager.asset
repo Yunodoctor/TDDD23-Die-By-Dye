@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Health
   - Weapon
   layers:
   - Default
@@ -15,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - Health
+  - 
   - Weapon
   - 
   - 
@@ -45,4 +44,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2814703821
     locked: 0
