@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HelthPickUp : MonoBehaviour {
+public class HealthPickUp : MonoBehaviour {
+    
+    // Use this for initialization
+    void Start () {
 
-    //public float healthAmount;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

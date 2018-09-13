@@ -10,8 +10,7 @@ public class Projectile : MonoBehaviour {
 	public int damage;
 	public LayerMask whatIsSolid; //Linear mask to ignore sertain colliders
 
-
-	public GameObject destroyEffect;
+    public GameObject destroyEffect;
 
 	// Use this for initialization
 	private void Start () {
@@ -29,7 +28,7 @@ public class Projectile : MonoBehaviour {
 		if(hitInfo.collider != null){
 			if (hitInfo.collider.CompareTag ("Enemy")) {
 				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
-				hitInfo.collider.GetComponent<EnemiesFollow>().TakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
+				hitInfo.collider.GetComponent<Enemies>().TakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
 			DestroyProjectile();
 		}
