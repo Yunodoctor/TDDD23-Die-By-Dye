@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemiesFollow : MonoBehaviour {
+public class Enemies : MonoBehaviour {
 
     public float movementSpeed; //To control how fast the enemie chases the player
 	public int health; //Enemy total health
@@ -10,8 +10,8 @@ public class EnemiesFollow : MonoBehaviour {
 
 	public GameObject deathEffect; //Ifall vi vill ha det
 
-	//Enemy following player
-	void Start () {
+    //Enemy following player
+    void Start () {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 	}
 	
@@ -27,7 +27,7 @@ public class EnemiesFollow : MonoBehaviour {
 		}
 	}
 
-	//Health decrease
+	//Health decrease system
 	public void TakeDamage(int damage){
 		health -= damage;
 	}

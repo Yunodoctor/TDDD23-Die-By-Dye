@@ -9,7 +9,7 @@ public class HealthPickUp : MonoBehaviour {
 
     }
 	
-	// Update is called once per frame
+	// Update is called once per fwWrame
 	void Update () {
 
 	}
