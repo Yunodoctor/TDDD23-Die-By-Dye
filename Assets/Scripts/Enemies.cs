@@ -7,7 +7,11 @@ public class Enemies : MonoBehaviour {
     public float movementSpeed; //To control how fast the enemie chases the player
 	public int health; //Enemy total health
     private Transform target; //Holds the gameObject the enemies are chasing
-    private Player player; 
+    private Player player;
+
+    //Drop
+    public bool HealthDrop;
+    public GameObject HealthDropObject;
 
     public GameObject deathEffect; //Ifall vi vill ha det
 
@@ -26,6 +30,11 @@ public class Enemies : MonoBehaviour {
 		if(health <= 0){
 			//Instantiate (deathEffect, transform.position, Quaternion.identity); //Ifall vi vill ha en cool effekt när fienden dör
 			Destroy(gameObject);
+
+            if (HealthDrop)
+            {
+                Instantiate(HealthDropObject, transform.position, transform.rotation);
+            }
 		}
 	}
 
