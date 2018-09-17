@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247815120574532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.84, y: -0.02, z: -2}
+  m_LocalPosition: {x: -6.24, y: -1.21, z: -2}
   m_LocalScale: {x: 0.08964292, y: 0.093581036, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,10 +51,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.073943615, y: -0.07080364}
+  m_Offset: {x: -0.0977335, y: 0.09365654}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -65,7 +65,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.724315, y: 14.956905}
+  m_Size: {x: 17.81447, y: 17.25925}
   m_EdgeRadius: 0
 --- !u!114 &114945475164954454
 MonoBehaviour:
@@ -78,8 +78,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a946d25efbeff4db6fe7686f1eb948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  health: 3
+  movementSpeed: 1
+  health: 1
+  HealthDrop: 1
+  HealthDropObject: {fileID: 0}
   deathEffect: {fileID: 0}
 --- !u!212 &212000289071425550
 SpriteRenderer:

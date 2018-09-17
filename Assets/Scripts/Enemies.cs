@@ -12,6 +12,7 @@ public class Enemies : MonoBehaviour {
     //Drop
     public bool HealthDrop;
     public GameObject HealthDropObject;
+    private float dropRate = 0.5f;
 
     public GameObject deathEffect; //Ifall vi vill ha det
 
@@ -31,7 +32,7 @@ public class Enemies : MonoBehaviour {
 			//Instantiate (deathEffect, transform.position, Quaternion.identity); //Ifall vi vill ha en cool effekt när fienden dör
 			Destroy(gameObject);
 
-            if (HealthDrop)
+            if(Random.Range(0f, 1f) <= dropRate)
             {
                 Instantiate(HealthDropObject, transform.position, transform.rotation);
             }
