@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
 
+
 	public GameObject[] enemyPattern;
 
 	private float timeBtwSpawn;
 	public float startTimeBtwSpawn;
 	public float decreaseTime;
 	public float minTime = 0.65f;
+
+
 	
 	// Update is called once per frame
 	private void Update () {

@@ -56,7 +56,23 @@ GameObject:
   - component: {fileID: 212223938483910500}
   - component: {fileID: 114840887871894800}
   m_Layer: 0
-  m_Name: Weapon
+  m_Name: WeaponGreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1668737441274896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4612465678341150}
+  - component: {fileID: 114457038948806432}
+  m_Layer: 0
+  m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,8 +89,22 @@ Transform:
   m_LocalScale: {x: 0.57173985, y: 0.5717399, z: 1}
   m_Children:
   - {fileID: 4999176830697436}
+  - {fileID: 4612465678341150}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4612465678341150
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668737441274896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4600099060786668}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4846513415285248
 Transform:
@@ -138,6 +168,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.2850001
+--- !u!114 &114457038948806432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668737441274896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60acb026a2578477990d7394bf3dd298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeWeapon: {fileID: 1785076078123424, guid: ff2fddb2e9e7e4bed9c6eb5c808cc00e,
+    type: 2}
 --- !u!114 &114840887871894800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,6 +195,7 @@ MonoBehaviour:
   offset: 0
   projectile: {fileID: 1055701936776590, guid: 98698a05b42ba45a6808379816c15a3a, type: 2}
   shotPoint: {fileID: 4846513415285248}
+  weaponSprite: {fileID: 21300000, guid: fbf10d05c7c7d416db3608d93d45bf1c, type: 3}
   startTimeBtwShots: 0.25
 --- !u!114 &114894546025079318
 MonoBehaviour:

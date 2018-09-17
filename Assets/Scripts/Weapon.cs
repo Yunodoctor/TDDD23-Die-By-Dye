@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour {
 
 	public GameObject projectile;
 	public Transform shotPoint;
+	public Sprite weaponSprite;
 
 	private float timeBtwShots;
 	public float startTimeBtwShots; //Change to set how often the player will be allowed to shoot projectiles
