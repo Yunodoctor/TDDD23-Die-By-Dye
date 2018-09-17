@@ -30,7 +30,7 @@ public class Enemies : MonoBehaviour {
 	}
 
 	//Health decrease system
-	public void TakeDamage(int damage){
+	public void enemyTakeDamage(int damage){
 		health -= damage;
 	}
 
@@ -39,7 +39,7 @@ public class Enemies : MonoBehaviour {
     {
         if(collision.CompareTag("Player"))
         {
-            player.playerDamage(1);
+            player.playerTakeDamage(1);
         }
     }
 }

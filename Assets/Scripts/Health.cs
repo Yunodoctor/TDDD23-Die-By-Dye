@@ -48,7 +48,7 @@ public class Health : MonoBehaviour {
                 hearts[i].enabled = false;
             }
         }
-        //hearts.sprite = hearts[player.curHealth];
+
         health = player.curHealth;
         numOfHearts = player.maxHealth;
 }

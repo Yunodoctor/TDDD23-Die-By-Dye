@@ -58,8 +58,13 @@ public class Player : MonoBehaviour {
     //    Application.LoadLevel(Application.loadedLevel);
     //}
 
-    public void playerDamage(int dmg)
+    public void playerTakeDamage(int dmg)
     {
         curHealth -= dmg;
+    }
+
+    public void playerTakeHealth(int hp)
+    {
+        curHealth += hp;
     }
 }
