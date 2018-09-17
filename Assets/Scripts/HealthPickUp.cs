@@ -18,9 +18,9 @@ public class HealthPickUp : MonoBehaviour {
 
 	}
 
-    void OnTriggerEnter2D(Collider2D collsion)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collsion.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             player.playerTakeHealth(1);
             Destroy(gameObject);

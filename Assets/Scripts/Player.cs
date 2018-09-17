@@ -9,17 +9,16 @@ public class Player : MonoBehaviour {
 	private Rigidbody2D rb2d; 
 	private Vector2 moveVelocity;
 
-    //Stats
+    //Health stats
     public int curHealth;
     public int maxHealth = 5;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
 
         //Full health at the start of the game
-        curHealth = maxHealth;
-	}
+        curHealth = maxHealth;    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -44,7 +43,7 @@ public class Player : MonoBehaviour {
         //{
         //    Die();
         //}
-	}
+    }
 
 	//Another case: if we want the character to be kinetic
 	void FixedUpdate()

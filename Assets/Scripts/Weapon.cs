@@ -10,16 +10,13 @@ public class Weapon : MonoBehaviour {
 	public Transform shotPoint;
 	public Sprite weaponSprite;
 
-	public GameObject Weapon1;
-	public GameObject Weapon2;
-
 	private float timeBtwShots;
 	public float startTimeBtwShots; //Change to set how often the player will be allowed to shoot projectiles
 
 	// Use this for initialization
 	void Start () {
-		Weapon1.SetActive (true);
-		Weapon2.SetActive (false);
+		//Weapon1.SetActive (true);
+		//Weapon2.SetActive (false);
 		
 	}
 	
@@ -39,16 +36,17 @@ public class Weapon : MonoBehaviour {
 		else {
 			timeBtwShots -= Time.deltaTime;
 		}
-	}
+    }
 
-	void OnTriggerStay2D(Collider2D coll){
-		Debug.Log ("Collision");
-		if(coll.gameObject.tag == "Player" && Input.GetMouseButton(1)){
-			//Add weapon to player
-			Debug.Log("Weapon picked up");
-			Weapon1.SetActive (false);
-			Weapon2.SetActive (true);
+	//void OnTriggerStay2D(Collider2D collision)
+ //   {
+ //       if (collision.CompareTag("Player") && Input.GetMouseButton(1)){
+ //           //Add weapon to player
+ //           Debug.Log("Weapon picked up");
+        
+ //           Weapon1.SetActive (false);
+	//		Weapon2.SetActive (true);
 			
-		}
-	}
+	//	    }
+ // 	}
 }
