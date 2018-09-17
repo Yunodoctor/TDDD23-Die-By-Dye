@@ -7,13 +7,15 @@ public class Enemies : MonoBehaviour {
     public float movementSpeed; //To control how fast the enemie chases the player
 	public int health; //Enemy total health
     private Transform target; //Holds the gameObject the enemies are chasing
+    private Player player; 
 
-	public GameObject deathEffect; //Ifall vi vill ha det
+    public GameObject deathEffect; //Ifall vi vill ha det
 
     //Enemy following player
     void Start () {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-	}
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,4 +33,13 @@ public class Enemies : MonoBehaviour {
 	public void TakeDamage(int damage){
 		health -= damage;
 	}
+
+    //Collider enters the trigger
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            player.playerDamage(1);
+        }
+    }
 }

@@ -12,11 +12,12 @@ public class Health : MonoBehaviour {
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    private Player player;
     
 	// Use this for initialization
 	void Start () {
-		
-	}
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -47,5 +48,8 @@ public class Health : MonoBehaviour {
                 hearts[i].enabled = false;
             }
         }
-	}
+        //hearts.sprite = hearts[player.curHealth];
+        health = player.curHealth;
+        numOfHearts = player.maxHealth;
+}
 }
