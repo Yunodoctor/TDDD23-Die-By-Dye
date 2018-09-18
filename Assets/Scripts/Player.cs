@@ -41,12 +41,21 @@ public class Player : MonoBehaviour {
 
         //if(curHealth <= 0)
         //{
-        //    Die();
+        //     Die();
         //}
+
+        transform.Translate(moveHorizontal * movementSpeed * Time.deltaTime, 0, 0);
+        transform.Translate(0, moveVertical * movementSpeed * Time.deltaTime, 0);
+
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, -12, 12);
+        pos.y = Mathf.Clamp(pos.y, -4, 4);
+
+        transform.position = pos;
     }
 
-	//Another case: if we want the character to be kinetic
-	void FixedUpdate()
+    //Another case: if we want the character to be kinetic
+    void FixedUpdate()
 	{
 		rb2d.MovePosition (rb2d.position + moveVelocity * Time.fixedDeltaTime);
 	}
@@ -54,7 +63,7 @@ public class Player : MonoBehaviour {
     //void Die()
     //{
     //    //Restart
-    //    Application.LoadLevel(Application.loadedLevel);
+    //    Destroy(gameObject);
     //}
 
     public void playerTakeDamage(int dmg)

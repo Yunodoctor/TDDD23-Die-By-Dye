@@ -31,18 +31,24 @@ public class Enemies : MonoBehaviour {
 		}
 		//If the enemy takes damage, destroy object
 		if(health <= 0){
-			//Instantiate (deathEffect, transform.position, Quaternion.identity); //Ifall vi vill ha en cool effekt när fienden dör
-			Destroy(gameObject);
+            //Instantiate (deathEffect, transform.position, Quaternion.identity); //Ifall vi vill ha en cool effekt när fienden dör
+            LootDrop();
+            Destroy(gameObject);
+        }
+    }
+    
+    void LootDrop()
+    {
+        if(Random.Range(0f, 1f) <= dropRate)
+        {
+            Instantiate(HealthDropObject, transform.position, transform.rotation);
+        }
+    }
 
-            if(Random.Range(0f, 1f) <= dropRate)
-            {
-                Instantiate(HealthDropObject, transform.position, transform.rotation);
-            }
-		}
-	}
+                
 
-	//Health decrease system
-	public void enemyTakeDamage(int damage){
+//Health decrease system
+public void enemyTakeDamage(int damage){
 		health -= damage;
 	}
 
