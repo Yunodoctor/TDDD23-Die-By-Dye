@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 212049169950806338}
   - component: {fileID: 114038554352769252}
   m_Layer: 0
-  m_Name: WeaponRed
+  m_Name: weaponRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

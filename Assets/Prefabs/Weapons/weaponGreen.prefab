@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212630436803221590}
   - component: {fileID: 114131368108485608}
   m_Layer: 0
-  m_Name: WeaponGreen
+  m_Name: weaponGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

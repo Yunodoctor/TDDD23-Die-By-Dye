@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4252291101946866}
   - component: {fileID: 114836099179909798}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: spawnPoint01
   m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4090093162834108}
   - component: {fileID: 114463353399102168}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: spawnPoint02
   m_TagString: Enemy
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4939347048253026}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: EnemyPattern01
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b62de51dcdca44b3b6d93395f227a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 1247815120574532, guid: e0814da6fdd704bebad2a895f277b728, type: 2}
+  Enemy: {fileID: 1092116186410394, guid: 70b594332dd6243e3a1a9d9bbc7b95fc, type: 2}
 --- !u!114 &114836099179909798
 MonoBehaviour:
   m_ObjectHideFlags: 1
