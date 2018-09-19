@@ -31,7 +31,8 @@ public class Enemies : MonoBehaviour {
 		}
 		//If the enemy takes damage, destroy object
 		if(health <= 0){
-            Instantiate (deathEffect, transform.position, Quaternion.identity); //Ifall vi vill ha en cool effekt när fienden dör
+			//Death effect when enemy die
+            Instantiate (deathEffect, transform.position, Quaternion.identity); 
 
             if (Random.Range(0f, 1f) <= dropRate)
             {

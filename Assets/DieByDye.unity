@@ -809,7 +809,7 @@ MonoBehaviour:
   - {fileID: 1983445497990830, guid: 0297018b439cb4f97895f39971ac6241, type: 2}
   - {fileID: 1731999363545798, guid: f4bb6e9edf28b481c977ba08ba56f586, type: 2}
   startTimeBtwSpawn: 2
-  decreaseTime: 0.5
+  decreaseTime: 0.05
   minTime: 0.65
 --- !u!4 &1441538585
 Transform:
