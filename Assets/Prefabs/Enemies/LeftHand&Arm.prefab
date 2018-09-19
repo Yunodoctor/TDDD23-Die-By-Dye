@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 61612888715124316}
   - component: {fileID: 61903450495999292}
   - component: {fileID: 50612358510849274}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: LeftHand&Arm
-  m_TagString: Enemy
+  m_TagString: Enemy4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

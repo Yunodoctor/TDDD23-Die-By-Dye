@@ -16,7 +16,7 @@ public class Enemies : MonoBehaviour {
     private float dropRate = 0.5f;
 
     public GameObject deathEffect; //Ifall vi vill ha det
-
+	private int scorePoint = 10;
     //Enemy following player
     void Start () {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -37,7 +37,7 @@ public class Enemies : MonoBehaviour {
             //{
             //    Instantiate(HealthDropObject, transform.position, transform.rotation);
             //}
-
+			ScoreManager.scoreValue += scorePoint;
             Destroy(gameObject);
         }
     }

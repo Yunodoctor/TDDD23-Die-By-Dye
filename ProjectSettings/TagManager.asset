@@ -8,6 +8,8 @@ TagManager:
   - Health
   - Enemy
   - Enemy2
+  - Enemy3
+  - Enemy4
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - Enemy
   - Enviroment
   - Enemy2
-  - 
-  - 
+  - Enemy3
+  - Enemy4
   - 
   - 
   - 

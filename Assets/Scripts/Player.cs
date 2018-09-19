@@ -60,6 +60,9 @@ public class Player : MonoBehaviour {
     void FixedUpdate()
 	{
 		rb2d.MovePosition (rb2d.position + moveVelocity * Time.fixedDeltaTime);
+		//Movemenet without jitter
+		//rb2d.MovePosition(new Vector2((transform.position.x + moveVelocity.x * movementSpeed * Time.deltaTime), transform.position.y + moveVelocity.y * movementSpeed *Time.deltaTime));
+
 	}
 
     public void playerTakeDamage(int dmg)

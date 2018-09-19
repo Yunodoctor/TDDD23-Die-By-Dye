@@ -36,6 +36,14 @@ public class Projectile : MonoBehaviour {
 				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
+			if (hitInfo.collider.CompareTag ("Enemy3")) {
+				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
+				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
+			}
+			if (hitInfo.collider.CompareTag ("Enemy4")) {
+				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
+				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
+			}
 			DestroyProjectile();
 		}
 

@@ -62,9 +62,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1172767914548982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.666573, y: -0.039819777, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.43, y: -0.25, z: -1}
+  m_LocalScale: {x: 1.7490472, y: 1.7490472, z: 1}
   m_Children:
   - {fileID: 4114698827361356}
   m_Father: {fileID: 0}
@@ -76,13 +76,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1172767914548982}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be3ea9e801d12d04599db15e48e88315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
-  projectile: {fileID: 1055701936776590, guid: 98698a05b42ba45a6808379816c15a3a, type: 2}
+  projectile: {fileID: 1884140507606156, guid: 3f0f5370642c141e7bd5d9ca567c0668, type: 2}
   shotPoint: {fileID: 4114698827361356}
   weaponSprite: {fileID: 0}
   startTimeBtwShots: 0
