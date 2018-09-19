@@ -59,3 +59,6 @@ TagManager:
   - name: Characters
     uniqueID: 2825583549
     locked: 0
+  - name: Weapon
+    uniqueID: 2347444731
+    locked: 0
