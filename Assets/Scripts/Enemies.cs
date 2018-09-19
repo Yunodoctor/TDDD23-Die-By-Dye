@@ -55,6 +55,7 @@ public void enemyTakeDamage(int damage){
     {
         if(collision.CompareTag("Player"))
         {
+			Debug.Log ("I TAKE DAMAGE");
             player.playerTakeDamage(1);
         }
     }

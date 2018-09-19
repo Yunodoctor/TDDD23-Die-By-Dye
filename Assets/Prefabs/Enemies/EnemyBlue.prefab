@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212595638004882424}
   - component: {fileID: 114554811358120004}
   - component: {fileID: 50612358510849274}
-  - component: {fileID: 58599517648898794}
   - component: {fileID: 58337211174595478}
   m_Layer: 12
   m_Name: EnemyBlue
@@ -38,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092116186410394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.188246, y: -2.2677686, z: 0}
+  m_LocalPosition: {x: 1.3616309, y: -0.75085115, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,27 +72,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0051732063}
-  serializedVersion: 2
-  m_Radius: 0.26999187
---- !u!58 &58599517648898794
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1092116186410394}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0051733255}
+  m_Offset: {x: 0, y: 0.0069168806}
   serializedVersion: 2
-  m_Radius: 0.25274765
+  m_Radius: 0.25778544
 --- !u!114 &114554811358120004
 MonoBehaviour:
   m_ObjectHideFlags: 1

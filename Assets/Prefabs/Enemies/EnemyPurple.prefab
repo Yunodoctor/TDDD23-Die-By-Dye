@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212610017650827146}
   - component: {fileID: 114691453178052454}
   - component: {fileID: 50002359351793674}
-  - component: {fileID: 58556939735671914}
   - component: {fileID: 58871398507165600}
   m_Layer: 13
   m_Name: EnemyPurple
@@ -38,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1415926147491714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3780286, y: -2.3737032, z: 0}
+  m_LocalPosition: {x: -0.64747983, y: -1.2377217, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &58556939735671914
+--- !u!58 &58871398507165600
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -76,24 +75,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.012632847}
+  m_Offset: {x: -0.010077298, y: 0.012632966}
   serializedVersion: 2
-  m_Radius: 0.26188874
---- !u!58 &58871398507165600
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1415926147491714}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.012632966}
-  serializedVersion: 2
-  m_Radius: 0.27199495
+  m_Radius: 0.26191765
 --- !u!114 &114691453178052454
 MonoBehaviour:
   m_ObjectHideFlags: 1
