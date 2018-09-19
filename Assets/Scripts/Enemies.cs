@@ -13,7 +13,7 @@ public class Enemies : MonoBehaviour {
     //Drop
     public bool HealthDrop;
     public GameObject HealthDropObject;
-    private float dropRate = 0.5f;
+    private float dropRate = 0.3f;
 
     public GameObject deathEffect; //Ifall vi vill ha det
 	private int scorePoint = 10;
@@ -33,10 +33,10 @@ public class Enemies : MonoBehaviour {
 		if(health <= 0){
             Instantiate (deathEffect, transform.position, Quaternion.identity); //Ifall vi vill ha en cool effekt när fienden dör
 
-            //if (Random.Range(0f, 1f) <= dropRate)
-            //{
-            //    Instantiate(HealthDropObject, transform.position, transform.rotation);
-            //}
+            if (Random.Range(0f, 1f) <= dropRate)
+            {
+                Instantiate(HealthDropObject, transform.position, Quaternion.identity);
+            }
 			ScoreManager.scoreValue += scorePoint;
             Destroy(gameObject);
         }
@@ -55,7 +55,6 @@ public void enemyTakeDamage(int damage){
     {
         if(collision.CompareTag("Player"))
         {
-			Debug.Log ("I TAKE DAMAGE");
             player.playerTakeDamage(1);
         }
     }
