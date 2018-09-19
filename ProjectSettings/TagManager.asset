@@ -4,12 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Health
   - Weapon
   - EnemyGreen
   - EnemyOrange
   - EnemyBlue
   - EnemyPurple
+  - Health
+  - EnemyGreen
   layers:
   - Default
   - TransparentFX
@@ -20,12 +21,14 @@ TagManager:
   - 
   - 
   - Environment
-  - Weapon
   - 
   - EnemyGreen
   - EnemyOrange
   - EnemyBlue
   - EnemyPurple
+  - Weapon
+  - 
+  - Environment
   - 
   - 
   - 
