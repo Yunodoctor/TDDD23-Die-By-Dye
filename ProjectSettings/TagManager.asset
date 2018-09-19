@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Weapon
   - Health
-  - Enemy
-  - Enemy2
-  - Enemy3
-  - Enemy4
+  - Weapon
+  - EnemyGreen
+  - EnemyOrange
+  - EnemyBlue
+  - EnemyPurple
   layers:
   - Default
   - TransparentFX
@@ -19,14 +19,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Environment
   - Weapon
   - 
-  - Enemy
-  - Enviroment
-  - Enemy2
-  - Enemy3
-  - Enemy4
+  - EnemyGreen
+  - EnemyOrange
+  - EnemyBlue
+  - EnemyPurple
+  - 
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
+  - name: TreeFrame
     uniqueID: 2814703821
+    locked: 0
+  - name: Characters
+    uniqueID: 2825583549
     locked: 0
