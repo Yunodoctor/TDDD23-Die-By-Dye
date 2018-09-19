@@ -39,10 +39,12 @@ public class Player : MonoBehaviour {
             curHealth = maxHealth;
         }
 
-        //if(curHealth <= 0)
-        //{
-        //     Die();
-        //}
+        if(curHealth <= 0)
+        {
+            //Restart
+            //Destroy(gameObject);
+            FindObjectOfType<GameManager>().EndGame();
+        }
 
         transform.Translate(moveHorizontal * movementSpeed * Time.deltaTime, 0, 0);
         transform.Translate(0, moveVertical * movementSpeed * Time.deltaTime, 0);
@@ -59,12 +61,6 @@ public class Player : MonoBehaviour {
 	{
 		rb2d.MovePosition (rb2d.position + moveVelocity * Time.fixedDeltaTime);
 	}
-
-    //void Die()
-    //{
-    //    //Restart
-    //    Destroy(gameObject);
-    //}
 
     public void playerTakeDamage(int dmg)
     {
