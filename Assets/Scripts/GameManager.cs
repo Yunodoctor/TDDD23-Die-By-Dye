@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     bool gameHasEnded = false;
-    public float restartDelay = 10f;
+    public float restartDelay = 2f;
 
 	// Use this for initialization
 	void Start () {
