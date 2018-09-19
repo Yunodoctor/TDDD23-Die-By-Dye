@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1415926147491714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64747983, y: -1.2377217, z: 0}
+  m_LocalPosition: {x: 0.53870106, y: -3.4310007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,7 +94,8 @@ MonoBehaviour:
   stopDistance: 0.5
   HealthDrop: 0
   HealthDropObject: {fileID: 0}
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 1622995045825182, guid: b51a18cd36a254fa3be71d0d9c682198,
+    type: 2}
 --- !u!212 &212610017650827146
 SpriteRenderer:
   m_ObjectHideFlags: 1
