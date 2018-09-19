@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212735801074443650}
   - component: {fileID: 114045419391269068}
   - component: {fileID: 50788422673421514}
-  - component: {fileID: 58675364001995908}
+  - component: {fileID: 58804157063751560}
   m_Layer: 11
   m_Name: EnemyOrange
   m_TagString: EnemyOrange
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1664031937010244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.356215, y: 0.062653914, z: -2}
+  m_LocalPosition: {x: 3.2516997, y: -2.6768928, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &58675364001995908
+--- !u!58 &58804157063751560
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,9 +75,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.00054371357}
+  m_Offset: {x: 0, y: 0.00252676}
   serializedVersion: 2
-  m_Radius: 0.25376546
+  m_Radius: 0.2770481
 --- !u!114 &114045419391269068
 MonoBehaviour:
   m_ObjectHideFlags: 1
