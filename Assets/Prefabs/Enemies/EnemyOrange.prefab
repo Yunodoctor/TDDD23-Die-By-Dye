@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2
   health: 2
-  stopDistance: 1.5
+  stopDistance: 0.5
   HealthDrop: 0
   HealthDropObject: {fileID: 0}
   deathEffect: {fileID: 0}
