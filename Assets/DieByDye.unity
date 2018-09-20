@@ -618,8 +618,8 @@ Canvas:
   m_GameObject: {fileID: 771086077}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 302131949}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -808,7 +808,7 @@ MonoBehaviour:
   enemyPattern:
   - {fileID: 1983445497990830, guid: 0297018b439cb4f97895f39971ac6241, type: 2}
   - {fileID: 1731999363545798, guid: f4bb6e9edf28b481c977ba08ba56f586, type: 2}
-  startTimeBtwSpawn: 2
+  startTimeBtwSpawn: 4
   decreaseTime: 0.05
   minTime: 0.65
 --- !u!4 &1441538585
