@@ -663,8 +663,8 @@ MonoBehaviour:
   - {fileID: 953882058}
   - {fileID: 1384567438}
   - {fileID: 1997033639}
-  fullHeart: {fileID: 21300000, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
-  emptyHeart: {fileID: 21300002, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
+  fullHeart: {fileID: 21300000, guid: f4260ecd0a9a84dad8fa8f0e1d8e7f4b, type: 3}
+  emptyHeart: {fileID: 21300002, guid: f4260ecd0a9a84dad8fa8f0e1d8e7f4b, type: 3}
 --- !u!4 &883648195
 Transform:
   m_ObjectHideFlags: 0
@@ -808,9 +808,9 @@ MonoBehaviour:
   enemyPattern:
   - {fileID: 1983445497990830, guid: 0297018b439cb4f97895f39971ac6241, type: 2}
   - {fileID: 1731999363545798, guid: f4bb6e9edf28b481c977ba08ba56f586, type: 2}
-  startTimeBtwSpawn: 4
+  startTimeBtwSpawn: 10
   decreaseTime: 0.05
-  minTime: 0.65
+  minTime: 3
 --- !u!4 &1441538585
 Transform:
   m_ObjectHideFlags: 0

@@ -13,6 +13,5 @@ public class spawnPoint : MonoBehaviour {
 		randPos = Random.Range (-10.0f, 10.0f);
 		whereToSpawn = new Vector2 (randPos, transform.position.y);
 		Instantiate (Enemy, whereToSpawn, Quaternion.identity);
-		//Instantiate(Enemy, transform.position, Quaternion.identity);
 	}
 }

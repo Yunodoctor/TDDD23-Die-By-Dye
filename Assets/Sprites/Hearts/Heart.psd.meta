@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: a8a82562ba0644dce9f8991131482155
-timeCreated: 1537442222
+guid: f4260ecd0a9a84dad8fa8f0e1d8e7f4b
+timeCreated: 1537445758
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: LifeHeart_0
-    21300002: LifeHeart_1
+    21300000: Heart_0
+    21300002: Heart_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LifeHeart_0
+      name: Heart_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 16
-        width: 26
-        height: 24
+        width: 29
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,13 +116,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: LifeHeart_1
+      name: Heart_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 34
         y: 18
-        width: 26
-        height: 22
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
