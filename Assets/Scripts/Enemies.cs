@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemies : MonoBehaviour
 {
 
-    public float movementSpeed; //To control how fast the enemie chases the player
+    public float movementSpeed; //To control how fast the enemy chases the player
     public int health; //Enemy total health
     private Transform target; //Holds the gameObject the enemies are chasing
     private Player player;

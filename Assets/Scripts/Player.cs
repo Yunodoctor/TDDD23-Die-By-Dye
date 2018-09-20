@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         Vector2 movementInput = new Vector2(moveHorizontal, moveVertical);
 
         //Call the AddForce function of our rigid body supplying movement multiplied by speed to move our player
-        //rb2d.AddForce (movementInput*movementSpeed)
+		//rb2d.AddForce (movementInput*movementSpeed);
         //kommentera bort
         moveVelocity = movementInput.normalized * movementSpeed;
 
