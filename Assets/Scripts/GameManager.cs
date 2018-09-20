@@ -3,24 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
-
+public class GameManager : MonoBehaviour
+{
     bool gameHasEnded = false;
     public float restartDelay = 2f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void EndGame()
     {
-        if(gameHasEnded == false)
+        if (gameHasEnded == false)
         {
             gameHasEnded = true;
             Debug.Log("Game Over");

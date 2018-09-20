@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour {
-
+public class Health : MonoBehaviour
+{
     private int health;
     private int numOfHearts;
 
@@ -13,22 +13,24 @@ public class Health : MonoBehaviour {
     public Sprite emptyHeart;
 
     private Player player;
-    
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         //Max health
-        if(health > numOfHearts)
+        if (health > numOfHearts)
         {
             health = numOfHearts;
         }
-		
-        for(int i = 0; i < hearts.Length; i++)
+
+        for (int i = 0; i < hearts.Length; i++)
         {
             if (i < health)
             {
@@ -51,5 +53,5 @@ public class Health : MonoBehaviour {
 
         health = player.curHealth;
         numOfHearts = player.maxHealth;
-}
+    }
 }
