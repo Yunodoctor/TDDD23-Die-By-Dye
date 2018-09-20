@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    private int health;
-    private int numOfHearts;
-
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
     private Player player;
+    private int health;
+    private int numOfHearts;
 
     // Use this for initialization
     void Start()

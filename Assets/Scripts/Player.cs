@@ -50,14 +50,12 @@ public class Player : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
 
-        transform.Translate(moveHorizontal * movementSpeed * Time.deltaTime, 0, 0);
-        transform.Translate(0, moveVertical * movementSpeed * Time.deltaTime, 0);
+        //Check & correct if object is outside of screen boundaries
+        Vector3 finalPosition = transform.position;
+        finalPosition.x = Mathf.Clamp(finalPosition.x, -12, 12);
+        finalPosition.y = Mathf.Clamp(finalPosition.y, -5, 5);
+        transform.position = finalPosition;
 
-        Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, -12, 12);
-        pos.y = Mathf.Clamp(pos.y, -4, 4);
-
-        transform.position = pos;
     }
 
     //Another case: if we want the character to be kinetic
@@ -66,7 +64,6 @@ public class Player : MonoBehaviour
         rb2d.MovePosition(rb2d.position + moveVelocity * Time.fixedDeltaTime);
         //Movemenet without jitter
         //rb2d.MovePosition(new Vector2((transform.position.x + moveVelocity.x * movementSpeed * Time.deltaTime), transform.position.y + moveVelocity.y * movementSpeed *Time.deltaTime));
-
     }
 
     public void playerTakeDamage(int dmg)
