@@ -8,22 +8,28 @@ public class BossController : MonoBehaviour {
 	public int damage2Player; 
 	private float timeBtwDamage = 1.5f;
 	private Player player;
-	private Transform target; //Tillfälligt för att få rörelse
-	float movementSpeed = 1f;
+
+	public Transform endPoint;
+	public float speed;
+	private int current;
 
 	void Start()
 	{
-		target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); //Tillfällig för att få rörelse
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 	}
 
 	// Update is called once per frame
 	void Update () 
 	{
-		//Tillfällig if-sats för att få rörelse
-		if (Vector2.Distance(transform.position, target.position) > 3f)
+		if(transform.position != endPoint.position)
 		{
-			transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime); //Move the enemies position towards the player position at a certain speed (from, to, speed). Time.deltaTime makes sure that the enemies won't run faster on a fast computer comparing to a slow
+			Vector2 pos = Vector2.MoveTowards(transform.position, endPoint.position, speed* Time.deltaTime);
+			GetComponent<Rigidbody2D>().MovePosition(pos);
+		}
+
+		if (transform.position == endPoint.position) 
+		{
+			Destroy(gameObject);
 		}
 
 		//give the player some time to recover before taking anymore damage
@@ -31,10 +37,10 @@ public class BossController : MonoBehaviour {
 		{
 			timeBtwDamage -= Time.deltaTime;
 		}
+
 		//if boss take healt is zero
 		if (health <= 0)
 		{
-			//Death effect when enemy die
 			//Instantiate(deathEffect, transform.position, Quaternion.identity);
 			//ScoreManager.scoreValue += scorePoint;
 			Destroy(gameObject);
