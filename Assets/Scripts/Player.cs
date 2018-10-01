@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    //Initialization
-    public float movementSpeed; //Players movement speed
+    public float movementSpeed;
     private Rigidbody2D rb2d;
     private Vector2 moveVelocity;
 
@@ -26,8 +24,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float moveHorizontal = Input.GetAxisRaw("Horizontal"); //Using GetAxisRaW to get a more robotic movement, no acceleration
+        float moveHorizontal = Input.GetAxisRaw("Horizontal"); //Using GetAxisRaw to get a more robotic movement, no acceleration
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         //Use the two floats to create a new Vector2 variable movement
@@ -45,9 +42,7 @@ public class Player : MonoBehaviour
 
         if (curHealth <= 0)
         {
-            //Restart
-            //Destroy(gameObject);
-            FindObjectOfType<GameManager>().EndGame();
+            FindObjectOfType<GameManager>().Restart();
         }
 
         //Check & correct if object is outside of screen boundaries
