@@ -41,9 +41,14 @@ public class Projectile : MonoBehaviour {
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
 			if (hitInfo.collider.CompareTag ("EnemyPurple")) {
-				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
+				Debug.Log ("ENEMY PURPLE MUST TAKE DAMAGE!!");
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
+			if(hitInfo.collider.CompareTag("Boss"))
+			{
+				hitInfo.collider.GetComponent<BossController>().bossTakeDamage(damage);
+			}
+
 			DestroyProjectile();
 		}
 

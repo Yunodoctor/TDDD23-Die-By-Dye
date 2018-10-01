@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4539008004132368}
   - component: {fileID: 212595638004882424}
   - component: {fileID: 114554811358120004}
-  - component: {fileID: 50612358510849274}
   - component: {fileID: 58337211174595478}
+  - component: {fileID: 50384239067485270}
   m_Layer: 12
   m_Name: EnemyBlue
   m_TagString: EnemyBlue
@@ -43,7 +43,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50612358510849274
+--- !u!50 &50384239067485270
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -61,7 +61,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!58 &58337211174595478
 CircleCollider2D:

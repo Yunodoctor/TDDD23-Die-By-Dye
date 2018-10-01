@@ -11,9 +11,9 @@ TagManager:
   - EnemyPurple
   - Health
   - EnemyGreen
-  - Enemy4
-  - Enemy3
+  - Enviroment
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -24,7 +24,7 @@ TagManager:
   - 
   - 
   - Environment
-  - 
+  - Boss
   - EnemyGreen
   - EnemyOrange
   - EnemyBlue

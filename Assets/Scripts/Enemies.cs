@@ -43,6 +43,7 @@ public class Enemies : MonoBehaviour
             {
                 Instantiate(HealthDropObject, transform.position, Quaternion.identity);
             }
+			//score points on death
             ScoreManager.scoreValue += scorePoint;
             Destroy(gameObject);
         }
