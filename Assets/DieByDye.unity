@@ -631,6 +631,48 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 543909875}
+--- !u!1001 &554020874
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &640875933
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &641244834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -850,48 +892,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!1001 &554020874
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &771086077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1709,7 @@ GameObject:
   - component: {fileID: 1709355246}
   - component: {fileID: 1709355245}
   - component: {fileID: 1709355244}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: Stone
   m_TagString: Enviroment
   m_Icon: {fileID: 0}
