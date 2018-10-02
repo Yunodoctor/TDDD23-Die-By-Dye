@@ -27,11 +27,16 @@ public class Enemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Enemy moving towards player
-        if (Vector2.Distance(transform.position, target.position) > stopDistance)
+        if (player != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime); //Move the enemies position towards the player position at a certain speed (from, to, speed). Time.deltaTime makes sure that the enemies won't run faster on a fast computer comparing to a slow
+                //Enemy moving towards player
+                if (Vector2.Distance(transform.position, target.position) > stopDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime); //Move the enemies position towards the player position at a certain speed (from, to, speed). Time.deltaTime makes sure that the enemies won't run faster on a fast computer comparing to a slow
+            }
+
         }
+          
         //If the enemy takes damage, destroy object
         if (health <= 0)
         {
