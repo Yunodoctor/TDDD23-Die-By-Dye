@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossController : MonoBehaviour {
 
@@ -12,6 +13,8 @@ public class BossController : MonoBehaviour {
 	public Transform endPoint;
 	public float speed;
 	private int current;
+
+	public Slider healthBar;
 
 	void Start()
 	{
@@ -37,7 +40,7 @@ public class BossController : MonoBehaviour {
 		{
 			timeBtwDamage -= Time.deltaTime;
 		}
-
+		healthBar.value = health;
 		//if boss take healt is zero
 		if (health <= 0)
 		{
@@ -45,6 +48,8 @@ public class BossController : MonoBehaviour {
 			//ScoreManager.scoreValue += scorePoint;
 			Destroy(gameObject);
 		}
+
+
 	}
 
 	void OnTriggerEnter2D(Collider2D collision)
@@ -57,7 +62,7 @@ public class BossController : MonoBehaviour {
 			}
 		}
 
-	}
+	} 
 
 	//Health decrease system
 	public void bossTakeDamage(int damage)
