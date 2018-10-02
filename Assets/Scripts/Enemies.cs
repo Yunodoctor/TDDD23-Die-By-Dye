@@ -17,6 +17,7 @@ public class Enemies : MonoBehaviour
 
     public GameObject deathEffect; //Ifall vi vill ha det
     private int scorePoint = 10;
+
     //Enemy following player
     void Start()
     {
@@ -27,6 +28,7 @@ public class Enemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (player != null)
         {
                 //Enemy moving towards player
