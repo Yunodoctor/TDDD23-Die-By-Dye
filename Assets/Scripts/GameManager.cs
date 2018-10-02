@@ -25,7 +25,9 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over");
             //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+            FindObjectOfType<ScoreManager>().StartScore();
+
+
         }
     }
 

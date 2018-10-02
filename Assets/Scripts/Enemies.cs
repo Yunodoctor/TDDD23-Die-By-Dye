@@ -13,7 +13,7 @@ public class Enemies : MonoBehaviour
     //Drop
     public bool HealthDrop;
     public GameObject HealthDropObject;
-    private float dropRate = 0.2f;
+    private float dropRate = 0.1f;
 
     public GameObject deathEffect; //Ifall vi vill ha det
     private int scorePoint = 10;
