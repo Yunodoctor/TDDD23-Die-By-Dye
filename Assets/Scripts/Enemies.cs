@@ -45,7 +45,7 @@ public class Enemies : MonoBehaviour
             //Death effect when enemy die
             Instantiate(deathEffect, transform.position, Quaternion.identity);
 
-            if (Random.Range(0f, 2f) <= dropRate)
+            if (Random.Range(0f, 1f) <= dropRate)
             {
                 Instantiate(HealthDropObject, transform.position, Quaternion.identity);
             }
