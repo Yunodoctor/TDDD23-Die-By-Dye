@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
         if (curHealth <= 0)
         {
-            FindObjectOfType<GameManager>().Restart();
+            FindObjectOfType<GameManager>().EndGame();
         }
 
         //Check & correct if object is outside of screen boundaries

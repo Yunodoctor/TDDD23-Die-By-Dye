@@ -9,6 +9,14 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     public float restartDelay = 2f;
 
+    [SerializeField]
+    private GameObject GameOverUI;
+
+    public void EndGame()
+    {
+        GameOverUI.SetActive(true);
+    }
+
     public void Restart()
     {
         if (gameHasEnded == false)
