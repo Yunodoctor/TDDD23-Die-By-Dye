@@ -13,7 +13,7 @@ public class Enemies : MonoBehaviour
     //Drop
     public bool HealthDrop;
     public GameObject HealthDropObject;
-    private float dropRate = 0.3f;
+    private float dropRate = 0.2f;
 
     public GameObject deathEffect; //Ifall vi vill ha det
     private int scorePoint = 10;
@@ -45,7 +45,7 @@ public class Enemies : MonoBehaviour
             //Death effect when enemy die
             Instantiate(deathEffect, transform.position, Quaternion.identity);
 
-            if (Random.Range(0f, 1f) <= dropRate)
+            if (Random.Range(0f, 2f) <= dropRate)
             {
                 Instantiate(HealthDropObject, transform.position, Quaternion.identity);
             }

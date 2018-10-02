@@ -10,24 +10,30 @@ public class Spawner : MonoBehaviour
     public float startTimeBtwSpawn;
     public float decreaseTime;
     public float minTime = 3f;
-
+	float timer = 0f;
+	float startSpawning = 15f;
     // Update is called once per frame
     private void Update()
     {
-        if (timeBtwSpawn <= 0)
-        {
-            int rand = Random.Range(0, enemyPattern.Length);
-            Instantiate(enemyPattern[rand], transform.position, Quaternion.identity);
-            timeBtwSpawn = startTimeBtwSpawn; //Wait x amount of seconds before another enemy spawn in game
+		timer += Time.deltaTime;
+
+		if (timer >= startSpawning) 
+		{
+			if (timeBtwSpawn <= 0) 
+			{
+				int rand = Random.Range (0, enemyPattern.Length);
+				Instantiate (enemyPattern [rand], transform.position, Quaternion.identity);
+				timeBtwSpawn = startTimeBtwSpawn; //Wait x amount of seconds before another enemy spawn in game
 			
-            if (startTimeBtwSpawn > minTime)
-            {
-                startTimeBtwSpawn -= decreaseTime;//Time between spawns will be a little bit smaller next time an enemy spawns
-            }
-        }
-        else
-        {
-            timeBtwSpawn -= Time.deltaTime;
-        }
+				if (startTimeBtwSpawn > minTime) 
+				{
+					startTimeBtwSpawn -= decreaseTime;//Time between spawns will be a little bit smaller next time an enemy spawns
+				}
+			} 
+			else 
+			{
+				timeBtwSpawn -= Time.deltaTime;
+			}
+		}
     }
 }
