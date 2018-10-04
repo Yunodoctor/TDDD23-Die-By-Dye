@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         GameOverUI.SetActive(true);
+        //Time.timeScale = 0f;
     }
 
     public void Restart()
@@ -26,8 +27,6 @@ public class GameManager : MonoBehaviour
             //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             FindObjectOfType<ScoreManager>().StartScore();
-
-
         }
     }
 
@@ -36,5 +35,4 @@ public class GameManager : MonoBehaviour
         Debug.Log("APPLICATION QUIT!");
         Application.Quit();
     }
-
 }
