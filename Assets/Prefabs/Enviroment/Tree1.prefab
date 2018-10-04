@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4704137820481982}
   - component: {fileID: 212992397173873150}
-  - component: {fileID: 61037029896247826}
-  - component: {fileID: 95180376393479462}
+  - component: {fileID: 95982652704523046}
+  - component: {fileID: 58701582734894128}
   m_Layer: 0
   m_Name: Tree1
   m_TagString: Untagged
@@ -35,39 +35,29 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1984565249350702}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.701434, y: -0.9173876, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0039270706, w: 0.9999923}
+  m_LocalPosition: {x: -9.82, y: -4.45, z: 6.5471344}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61037029896247826
-BoxCollider2D:
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.45}
+--- !u!58 &58701582734894128
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1984565249350702}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 19d57bd46fd444f1cb1ebf0a5140f057, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.40701795, y: -0.081404686}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16, y: 9}
-    newSize: {x: 16, y: 9}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: -0.3747163, y: -1.4445344}
   serializedVersion: 2
-  m_Size: {x: 0.98908377, y: 3.3668308}
-  m_EdgeRadius: 0
---- !u!95 &95180376393479462
+  m_Radius: 0.33845234
+--- !u!95 &95982652704523046
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -76,7 +66,7 @@ Animator:
   m_GameObject: {fileID: 1984565249350702}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: be1ba942490bb4107aba0af942b0dae5, type: 2}
+  m_Controller: {fileID: 9100000, guid: ccc50492ecaf844a28e7f40b952927f0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -115,8 +105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1480263475
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 72491a73d32ca4f228d3d087297d80c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

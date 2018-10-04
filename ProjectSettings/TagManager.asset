@@ -54,12 +54,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: TreeFrame
-    uniqueID: 2814703821
-    locked: 0
   - name: Characters
     uniqueID: 2825583549
     locked: 0
   - name: Weapon
     uniqueID: 2347444731
+    locked: 0
+  - name: TreeFrame
+    uniqueID: 2814703821
     locked: 0
