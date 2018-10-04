@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BossController : MonoBehaviour {
 
-	public int health;
+	public int curHealth;
 	public int damage2Player; 
 	private float timeBtwDamage = 1.5f;
 	private Player player;
@@ -40,13 +40,14 @@ public class BossController : MonoBehaviour {
 		{
 			timeBtwDamage -= Time.deltaTime;
 		}
-		healthBar.value = health;
+		healthBar.value = curHealth;
 		//if boss take healt is zero
-		if (health <= 0)
+		if (curHealth <= 0)
 		{
 			//Instantiate(deathEffect, transform.position, Quaternion.identity);
 			//ScoreManager.scoreValue += scorePoint;
 			Destroy(gameObject);
+			FindObjectOfType<WeaponSwitching>().rainbowWeapon();
 		}
 
 
@@ -67,6 +68,8 @@ public class BossController : MonoBehaviour {
 	//Health decrease system
 	public void bossTakeDamage(int damage)
 	{
-		health -= damage;
+		curHealth -= damage;
 	}
+
+
 }

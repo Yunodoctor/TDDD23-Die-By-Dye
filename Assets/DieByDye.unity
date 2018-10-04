@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossSpawn: {fileID: 1101328727699468, guid: 41ae682d13a9545eb94969fbf6bb5417, type: 2}
-  startTimeBtwSpawn: 70
+  startTimeBtwSpawn: 80
 --- !u!4 &84536252
 Transform:
   m_ObjectHideFlags: 0

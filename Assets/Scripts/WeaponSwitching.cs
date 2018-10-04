@@ -5,11 +5,14 @@
 public class WeaponSwitching : MonoBehaviour
 {
     public int selectedWeapon = 0;
-
+	//private BossController boss;
+	float timer;
+	private int health;
     // Use this for initialization
     void Start()
     {
         SelectWeapon();
+		//boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossController>();
     }
 
     // Update is called once per frame 
@@ -37,16 +40,29 @@ public class WeaponSwitching : MonoBehaviour
         {
             selectedWeapon = 3;
         }
-		if (Input.GetKeyDown(KeyCode.Alpha5) && transform.childCount >= 5)
-		{
-			selectedWeapon = 4;
-		}
+			
+//		if (Input.GetKeyDown (KeyCode.Alpha5) && transform.childCount >= 5) 
+//		{
+//			selectedWeapon = 4;
+//		}
 
         if (previousSelectedWeapon != selectedWeapon)
         {
             SelectWeapon();
         }
     }
+
+	public void rainbowWeapon()
+	{
+		int previousSelectedWeapon = selectedWeapon;
+		selectedWeapon = 4;
+		Debug.Log("Rainbow weapon selected");
+
+		if (previousSelectedWeapon != selectedWeapon)
+		{
+			SelectWeapon();
+		}
+	}
 
     void SelectWeapon()
     {
@@ -65,4 +81,6 @@ public class WeaponSwitching : MonoBehaviour
             i++;
         }
     }
+
+
 }

@@ -22,7 +22,6 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //Max health
         if (health > numOfHearts)
         {
