@@ -15,14 +15,14 @@ public class Projectile : MonoBehaviour {
 	// Use this for initialization
 	private void Start () {
 		Invoke ("DestroyProjectile", lifeTime);
-		
+
 	}
 
 	// Update is called once per frame
 	private void Update () {
 
 		//Rays
-		RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
+		RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance, whatIsSolid);
 
 		//Checks if the ray collides with anything and what it has collided with
 		if(hitInfo.collider != null){
