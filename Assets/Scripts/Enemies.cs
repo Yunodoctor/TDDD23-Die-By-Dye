@@ -48,6 +48,11 @@ public class Enemies : MonoBehaviour
             ScoreManager.scoreValue += scorePoint;
             Destroy(gameObject);
         }
+
+        if(player.curHealth <= 0)
+        {
+            movementSpeed = 0f;
+        }
     }
 
     //Health decrease system

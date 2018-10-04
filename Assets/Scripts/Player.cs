@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
         if (curHealth <= 0)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
             FindObjectOfType<GameManager>().EndGame();
         }
 
