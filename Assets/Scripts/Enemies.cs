@@ -49,10 +49,10 @@ public class Enemies : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(player.curHealth <= 0)
-        {
-            movementSpeed = 0f;
-        }
+       // if(player.curHealth <= 0)
+        //{
+         //   movementSpeed = 0f;
+        //}
     }
 
     //Health decrease system
