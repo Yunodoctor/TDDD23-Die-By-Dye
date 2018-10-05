@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4392695001045084}
   - component: {fileID: 212574134995312972}
   - component: {fileID: 58756419912165376}
+  - component: {fileID: 95092982410070910}
   m_Layer: 0
   m_Name: Tree2
   m_TagString: Untagged
@@ -56,6 +57,23 @@ CircleCollider2D:
   m_Offset: {x: -0.3847475, y: -1.3841162}
   serializedVersion: 2
   m_Radius: 0.3894005
+--- !u!95 &95092982410070910
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781847127125780}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be1ba942490bb4107aba0af942b0dae5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &212574134995312972
 SpriteRenderer:
   m_ObjectHideFlags: 1
