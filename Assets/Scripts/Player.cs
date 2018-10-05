@@ -44,13 +44,15 @@ public class Player : MonoBehaviour
             curHealth = maxHealth;
         }
 
-        if (curHealth <= 0)
+        if (curHealth == 0)
         {
             //Destroy(gameObject);
+            movementSpeed = 0f;
+            curHealth = -1;
             FindObjectOfType<GameManager>().EndGame();
         }
 
-		if (flashActive) 
+        if (flashActive) 
 		{
 			if (flashCounter > flashLenght * .53f)  //0.66 makes two blinks
 			{
