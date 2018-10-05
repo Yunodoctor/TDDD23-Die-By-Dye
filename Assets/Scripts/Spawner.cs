@@ -13,11 +13,19 @@ public class Spawner : MonoBehaviour
 	float timer = 0f;
 	float startSpawning = 20f;
     // Update is called once per frame
+
+    private Player player;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
+
     private void Update()
     {
 		timer += Time.deltaTime;
 
-		if (timer >= startSpawning) 
+		if (timer >= startSpawning && player.curHealth > 0) 
 		{
 			if (timeBtwSpawn <= 0) 
 			{

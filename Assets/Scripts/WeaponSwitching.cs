@@ -78,8 +78,6 @@ public class WeaponSwitching : MonoBehaviour
 
 	}
 
-
-
     void SelectWeapon()
     {
         int i = 0;

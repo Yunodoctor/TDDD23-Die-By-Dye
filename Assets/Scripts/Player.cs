@@ -40,9 +40,11 @@ public class Player : MonoBehaviour
             curHealth = maxHealth;
         }
 
-        if (curHealth <= 0)
+        if (curHealth == 0)
         {
             //Destroy(gameObject);
+            movementSpeed = 0f;
+            curHealth = -1;
             FindObjectOfType<GameManager>().EndGame();
         }
 

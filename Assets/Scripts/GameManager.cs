@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         GameOverUI.SetActive(true);
-        //Time.timeScale = 0f;
     }
 
     public void Restart()
