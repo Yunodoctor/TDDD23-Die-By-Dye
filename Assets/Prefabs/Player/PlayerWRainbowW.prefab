@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114308885257943394}
   m_Layer: 0
   m_Name: weaponRainbow
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedWeapon: 0
-  timer: 10
+  timer: 0
 --- !u!114 &114116565216962118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -452,6 +452,7 @@ MonoBehaviour:
   movementSpeed: 7
   curHealth: 5
   maxHealth: 5
+  flashLenght: 0.8
 --- !u!114 &114347888174558970
 MonoBehaviour:
   m_ObjectHideFlags: 1
