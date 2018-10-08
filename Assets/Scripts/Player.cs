@@ -46,7 +46,6 @@ public class Player : MonoBehaviour
 
         if (curHealth == 0)
         {
-            //Destroy(gameObject);
             movementSpeed = 0f;
             curHealth = -1;
             FindObjectOfType<GameManager>().EndGame();
@@ -60,11 +59,11 @@ public class Player : MonoBehaviour
 				//playerSprite.color = new Color (playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
 
 			} 
-			else if (flashCounter > flashLenght * .26f) 
-			{
+			//else if (flashCounter > flashLenght * .26f) 
+			//{
 				//playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
-				playerSprite.color = new Color (1f, 1f, 1f, 1f);
-			}
+				//playerSprite.color = new Color (1f, 1f, 1f, 1f);
+			//}
 			else if(flashCounter > 0f)
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
