@@ -8,9 +8,15 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
     public float restartDelay = 2f;
+    private ScoreManager theScoreManager;
 
     [SerializeField]
     private GameObject GameOverUI;
+
+    private void Start()
+    {
+        theScoreManager = FindObjectOfType<ScoreManager>();
+    }
 
     public void EndGame()
     {
@@ -25,7 +31,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over");
             //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            FindObjectOfType<ScoreManager>().StartScore();
+            //theScoreManager.scoreValue = 0;
         }
     }
 
