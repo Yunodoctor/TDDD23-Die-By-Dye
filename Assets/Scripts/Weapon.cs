@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     public GameObject projectile;
     public Transform shotPoint;
     //public Sprite weaponSprite;
-
+	//public GameObject explosionEffect;
     private float timeBtwShots;
     public float startTimeBtwShots; //Change to set how often the player will be allowed to shoot projectiles
 
@@ -32,6 +32,7 @@ public class Weapon : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+				//Instantiate(explosionEffect, shotPoint.position, Quaternion.identity);
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 timeBtwShots = startTimeBtwShots;
             }
