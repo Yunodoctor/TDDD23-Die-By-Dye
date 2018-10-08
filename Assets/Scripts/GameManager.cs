@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over");
             //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            //theScoreManager.scoreValue = 0;
+            FindObjectOfType<ScoreManager>().StartScore();
         }
     }
 
