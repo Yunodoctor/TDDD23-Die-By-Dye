@@ -89,9 +89,9 @@ GameObject:
   - component: {fileID: 50047241120497396}
   - component: {fileID: 114311201103688204}
   - component: {fileID: 114109216597404854}
-  - component: {fileID: 95814025918235454}
   - component: {fileID: 70946798739894012}
   - component: {fileID: 70709893450503712}
+  - component: {fileID: 95374286356688628}
   m_Layer: 0
   m_Name: PlayerWRainbowW
   m_TagString: Player
@@ -357,7 +357,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.01
+  m_Mass: 0.001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -396,7 +396,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.18977383, y: -0.030397594}
   m_Size: {x: 0.3377813, y: 0.38644433}
   m_Direction: 0
---- !u!95 &95814025918235454
+--- !u!95 &95374286356688628
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -405,7 +405,7 @@ Animator:
   m_GameObject: {fileID: 1522751837825642}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8461c59289edb4051a0778086db068ff, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2188e6a217163402abdf348df14dc424, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -467,10 +467,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f039e841f34234b1ab45a84cdbd1abd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 7
+  movementSpeed: 5
   curHealth: 5
   maxHealth: 5
   flashLenght: 0.8
+  animation: {fileID: 95374286356688628}
 --- !u!114 &114347888174558970
 MonoBehaviour:
   m_ObjectHideFlags: 1

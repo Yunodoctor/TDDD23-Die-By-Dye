@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
 	public float flashLenght;
 	private float flashCounter;
 	private SpriteRenderer playerSprite;
+
+	public Animator animation;
     // Use this for initialization
     void Start()
     {
@@ -31,13 +33,25 @@ public class Player : MonoBehaviour
         float moveHorizontal = Input.GetAxisRaw("Horizontal"); //Using GetAxisRaw to get a more robotic movement, no acceleration
         float moveVertical = Input.GetAxisRaw("Vertical");
 
+		//Animation for walk
+		if (moveHorizontal != 0 && moveVertical == 0) {
+			animation.SetFloat ("Speed", Mathf.Abs (moveHorizontal));
+		} else {
+			animation.SetFloat ("Speed", Mathf.Abs(moveVertical));
+		}
+
         //Use the two floats to create a new Vector2 variable movement
         Vector2 movementInput = new Vector2(moveHorizontal, moveVertical);
 
         //Call the AddForce function of our rigid body supplying movement multiplied by speed to move our player
 		//rb2d.AddForce (movementInput*movementSpeed);
         //kommentera bort
-        moveVelocity = movementInput.normalized * movementSpeed;
+		moveVelocity = movementInput.normalized * movementSpeed;
+
+
+
+
+
 
         if (curHealth > maxHealth)
         {
@@ -46,7 +60,7 @@ public class Player : MonoBehaviour
 
         if (curHealth == 0)
         {
-            movementSpeed = 0f;
+			movementSpeed = 0f;
             curHealth = -1;
             FindObjectOfType<GameManager>().EndGame();
         }
