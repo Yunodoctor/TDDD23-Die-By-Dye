@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
 		playerSprite = GetComponent<SpriteRenderer>();
         //Full health at the start of the game
         curHealth = maxHealth;
+        //animation = FindObjectOfType<Animator>();
     }
 
     // Update is called once per frame

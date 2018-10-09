@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject GameOverUI;
+    [SerializeField]
+    private GameObject RestartUI;
 
     private void Start()
     {
@@ -32,6 +34,9 @@ public class GameManager : MonoBehaviour
             //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             FindObjectOfType<ScoreManager>().StartScore();
+
+            RestartUI.SetActive(true);
+            GameOverUI.SetActive(false);
         }
     }
 
