@@ -9,7 +9,7 @@ public class ScoreManager : MonoBehaviour
     public Text highScore;
     public static int scoreValue = 0;
     public int highScoreValue = 0;
-    private int scorePoint = 10;
+    //private int scorePoint = 10;
 
     // Use this for initialization
     void Start()

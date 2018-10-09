@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 114109216597404854}
   - component: {fileID: 70946798739894012}
   - component: {fileID: 70709893450503712}
-  - component: {fileID: 95374286356688628}
+  - component: {fileID: 95821518671197798}
   m_Layer: 0
   m_Name: PlayerWRainbowW
   m_TagString: Player
@@ -396,7 +396,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.18977383, y: -0.030397594}
   m_Size: {x: 0.3377813, y: 0.38644433}
   m_Direction: 0
---- !u!95 &95374286356688628
+--- !u!95 &95821518671197798
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -471,7 +471,8 @@ MonoBehaviour:
   curHealth: 5
   maxHealth: 5
   flashLenght: 0.8
-  animation: {fileID: 95374286356688628}
+  damageFace: {fileID: 21300000, guid: 710e216673e6f47559b274c5e4aee788, type: 3}
+  ani: {fileID: 95821518671197798}
 --- !u!114 &114347888174558970
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,20 +12,23 @@ public class Player : MonoBehaviour
     public int curHealth;
     public int maxHealth = 5;
 
+	//Damage stats
 	private bool flashActive;
 	public float flashLenght;
 	private float flashCounter;
 	private SpriteRenderer playerSprite;
+	public Sprite damageFace;
 
-	public Animator animation;
+	//Animation
+	public Animator ani;
     // Use this for initialization
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
 		playerSprite = GetComponent<SpriteRenderer>();
+
         //Full health at the start of the game
         curHealth = maxHealth;
-        //animation = FindObjectOfType<Animator>();
     }
 
     // Update is called once per frame
@@ -36,9 +39,9 @@ public class Player : MonoBehaviour
 
 		//Animation for walk
 		if (moveHorizontal != 0 && moveVertical == 0) {
-			animation.SetFloat ("Speed", Mathf.Abs (moveHorizontal));
+			ani.SetFloat ("Speed", Mathf.Abs (moveHorizontal));
 		} else {
-			animation.SetFloat ("Speed", Mathf.Abs(moveVertical));
+			ani.SetFloat ("Speed", Mathf.Abs(moveVertical));
 		}
 
         //Use the two floats to create a new Vector2 variable movement
@@ -48,11 +51,7 @@ public class Player : MonoBehaviour
 		//rb2d.AddForce (movementInput*movementSpeed);
         //kommentera bort
 		moveVelocity = movementInput.normalized * movementSpeed;
-
-
-
-
-
+	
 
         if (curHealth > maxHealth)
         {
@@ -71,7 +70,7 @@ public class Player : MonoBehaviour
 			if (flashCounter > flashLenght * .53f)  //0.66 makes two blinks
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);	
-				//playerSprite.color = new Color (playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
+				playerSprite.sprite = damageFace;
 
 			} 
 			//else if (flashCounter > flashLenght * .26f) 
@@ -82,8 +81,8 @@ public class Player : MonoBehaviour
 			else if(flashCounter > 0f)
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
-				//playerSprite.color = new Color (playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f);
 
+				playerSprite.sprite = damageFace;
 			}
 			else 
 			{
