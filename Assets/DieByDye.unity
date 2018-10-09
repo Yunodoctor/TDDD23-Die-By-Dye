@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 115594053}
   - component: {fileID: 115594052}
   m_Layer: 5
-  m_Name: GameOverText
+  m_Name: HighScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1642,11 +1642,6 @@ Transform:
   m_Father: {fileID: 32614336}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &356773118 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 95374286356688628, guid: aa88890a314a448d7852070c01b8ba70,
-    type: 2}
-  m_PrefabInternal: {fileID: 799504061}
 --- !u!1001 &384383079
 Prefab:
   m_ObjectHideFlags: 0
@@ -1716,6 +1711,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f,
     type: 2}
   m_PrefabInternal: {fileID: 1855216230}
+--- !u!95 &433001628 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95821518671197798, guid: aa88890a314a448d7852070c01b8ba70,
+    type: 2}
+  m_PrefabInternal: {fileID: 799504061}
 --- !u!4 &434863751 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f,
@@ -2202,7 +2202,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartDelay: 2
   GameOverUI: {fileID: 641244833}
-  RestartUI: {fileID: 0}
 --- !u!222 &641244838
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2628,7 +2627,7 @@ Prefab:
         type: 2}
       propertyPath: ani
       value: 
-      objectReference: {fileID: 356773118}
+      objectReference: {fileID: 433001628}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
   m_IsPrefabParent: 0
@@ -5340,7 +5339,6 @@ GameObject:
   - component: {fileID: 1521044854}
   - component: {fileID: 1521044853}
   - component: {fileID: 1521044852}
-  - component: {fileID: 1521044856}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -5421,7 +5419,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 641244837}
+      - m_Target: {fileID: 2056139042}
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -5469,23 +5467,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521044850}
---- !u!95 &1521044856
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1521044850}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 70cb6089918ec6b4f8f69efe7738316e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1547926611
 Prefab:
   m_ObjectHideFlags: 0
@@ -7556,7 +7537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartDelay: 3
   GameOverUI: {fileID: 641244833}
-  RestartUI: {fileID: 0}
 --- !u!4 &2056139043
 Transform:
   m_ObjectHideFlags: 0
