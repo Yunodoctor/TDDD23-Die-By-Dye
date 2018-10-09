@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114945475164954454}
   - component: {fileID: 50967879696261090}
   - component: {fileID: 58799698228325446}
+  - component: {fileID: 95786713553989146}
   m_Layer: 10
   m_Name: EnemyGreen
   m_TagString: EnemyGreen
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247815120574532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5092018, y: -3.3166533, z: -2}
+  m_LocalPosition: {x: -4.6944537, y: -0.8459776, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,9 +76,26 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.007591605}
+  m_Offset: {x: 0.10584378, y: 0.07435164}
   serializedVersion: 2
-  m_Radius: 0.25677478
+  m_Radius: 0.36261895
+--- !u!95 &95786713553989146
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1247815120574532}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 064f58704a4b845b38b375f16cb46e5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114945475164954454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,7 +149,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0453818be824b4538be0ecf6cb0bd019, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32377342489a94dd496ec31a32fd17a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
