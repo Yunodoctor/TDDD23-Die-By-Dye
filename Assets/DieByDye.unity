@@ -1642,6 +1642,11 @@ Transform:
   m_Father: {fileID: 32614336}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &356773118 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95374286356688628, guid: aa88890a314a448d7852070c01b8ba70,
+    type: 2}
+  m_PrefabInternal: {fileID: 799504061}
 --- !u!1001 &384383079
 Prefab:
   m_ObjectHideFlags: 0
@@ -2619,6 +2624,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114311201103688204, guid: aa88890a314a448d7852070c01b8ba70,
+        type: 2}
+      propertyPath: ani
+      value: 
+      objectReference: {fileID: 356773118}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
   m_IsPrefabParent: 0
