@@ -34,7 +34,6 @@ public class Weapon : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset); //Only rotation in z axis
         }
         
-
         if (timeBtwShots <= 0 && player.curHealth > 0)
         {
             if (Input.GetMouseButtonDown(0))
