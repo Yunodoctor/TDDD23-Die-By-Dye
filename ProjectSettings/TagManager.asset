@@ -66,3 +66,6 @@ TagManager:
   - name: Cursor
     uniqueID: 3683635091
     locked: 0
+  - name: Foreground
+    uniqueID: 2379632879
+    locked: 0
