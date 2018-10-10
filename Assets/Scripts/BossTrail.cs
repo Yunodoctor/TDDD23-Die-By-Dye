@@ -21,7 +21,7 @@ public class BossTrail : MonoBehaviour {
         {
             int rand = Random.Range(0, Trail.Length);
             GameObject instance = (GameObject)Instantiate(Trail[rand], transform.position, Quaternion.identity);
-            Destroy(instance, 12f);
+            Destroy(instance, 18f);
 
             timeBtwSpawns = startTimeBtwSpawns;
         }
