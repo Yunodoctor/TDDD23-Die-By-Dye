@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 			ani.SetFloat ("Speed", Mathf.Abs (moveHorizontal));
 		} else {
 			ani.SetFloat ("Speed", Mathf.Abs(moveVertical));
-		}
+        }
 
         //Use the two floats to create a new Vector2 variable movement
         Vector2 movementInput = new Vector2(moveHorizontal, moveVertical);
