@@ -1836,7 +1836,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 39bc037378b601e4db5f3306fe887dbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8344a7a5508f74f4c9bd01163f6d15d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6389,12 +6389,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7784233cfc581942b3ea5bed1e4f6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Keyboards: {fileID: 0}
-  KeyboardOneDown: {fileID: 0}
-  KeyboardTwoDown: {fileID: 0}
-  KeyboardThreeDown: {fileID: 0}
-  KeyboardFourDown: {fileID: 0}
-  KeyboardAllUp: {fileID: 0}
+  Keyboards: {fileID: 466842338}
+  KeyboardOneDown: {fileID: 21300000, guid: 8344a7a5508f74f4c9bd01163f6d15d7, type: 3}
+  KeyboardTwoDown: {fileID: 21300000, guid: 2f7f8f2a76894944eaa856aeb0af0c46, type: 3}
+  KeyboardThreeDown: {fileID: 21300000, guid: 4f2befc5f9428b0499f94f12d4b97ad7, type: 3}
+  KeyboardFourDown: {fileID: 21300000, guid: 49e23d8363f5e5c4e8786becca8bb049, type: 3}
+  KeyboardAllUp: {fileID: 21300000, guid: 39bc037378b601e4db5f3306fe887dbe, type: 3}
 --- !u!4 &1672549630
 Transform:
   m_ObjectHideFlags: 0

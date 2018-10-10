@@ -13,9 +13,10 @@ public class CompKeyboard : MonoBehaviour
     public Sprite KeyboardFourDown;
     public Sprite KeyboardAllUp;
 
+
     void Start()
     {
-        Keyboards.sprite = KeyboardOneDown;
+
     }
 
     // Update is called once per frame
