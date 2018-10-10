@@ -71,7 +71,6 @@ public class Player : MonoBehaviour
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);	
 				playerSprite.sprite = damageFace;
-
 			} 
 			//else if (flashCounter > flashLenght * .26f) 
 			//{
@@ -82,7 +81,7 @@ public class Player : MonoBehaviour
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
 
-				playerSprite.sprite = damageFace;
+				//playerSprite.sprite = damageFace;
 			}
 			else 
 			{
