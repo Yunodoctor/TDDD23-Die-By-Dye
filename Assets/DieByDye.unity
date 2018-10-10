@@ -2631,11 +2631,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.371538
+      value: 16.36
       objectReference: {fileID: 0}
     - target: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 24.715965
+      value: 25.07
       objectReference: {fileID: 0}
     - target: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3179,8 +3179,8 @@ MonoBehaviour:
   - {fileID: 953882058}
   - {fileID: 1384567438}
   - {fileID: 1997033639}
-  fullHeart: {fileID: 21300000, guid: f4260ecd0a9a84dad8fa8f0e1d8e7f4b, type: 3}
-  emptyHeart: {fileID: 21300002, guid: f4260ecd0a9a84dad8fa8f0e1d8e7f4b, type: 3}
+  fullHeart: {fileID: 21300000, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
+  emptyHeart: {fileID: 21300002, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
 --- !u!4 &883648195
 Transform:
   m_ObjectHideFlags: 0
@@ -3413,7 +3413,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3866,6 +3866,11 @@ Prefab:
     - target: {fileID: 212574134995312972, guid: b21f5622c06ce463496877e2c263893f,
         type: 2}
       propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58756419912165376, guid: b21f5622c06ce463496877e2c263893f,
+        type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5027,7 +5032,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5397,7 +5402,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6181,11 +6186,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.005407
+      value: 6.03
       objectReference: {fileID: 0}
     - target: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 23.86402
+      value: 23.39
       objectReference: {fileID: 0}
     - target: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6305,7 +6310,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7593,7 +7598,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 773be232e50ee4e24ba86fb081de02e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82d3516f43eca46cf8fb4dd0e1f66805, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
