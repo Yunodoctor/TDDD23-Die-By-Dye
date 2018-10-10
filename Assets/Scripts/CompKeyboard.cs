@@ -13,11 +13,9 @@ public class CompKeyboard : MonoBehaviour
     public Sprite KeyboardFourDown;
     public Sprite KeyboardAllUp;
 
-    //private Weapon weapon;
-
     void Start()
     {
-        //weapon = GetComponent<Weapon>();
+        Keyboards.sprite = KeyboardOneDown;
     }
 
     // Update is called once per frame
