@@ -12,22 +12,26 @@ public class Weapon : MonoBehaviour
 	//public GameObject explosionEffect;
     private float timeBtwShots;
     public float startTimeBtwShots; //Change to set how often the player will be allowed to shoot projectiles
+    private Player player;
 
     // Use this for initialization
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Handles rotation of weapon
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position; //Direction = destination - origin
-        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg; //Rotate to face the crusor
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset); //Only rotation in z axis
+        if (player.curHealth > 0)
+        {
+            //Handles rotation of weapon
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position; //Direction = destination - origin
+            float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg; //Rotate to face the crusor
+            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset); //Only rotation in z axis
+        }
 
-        if (timeBtwShots <= 0)
+        if (timeBtwShots <= 0 && player.curHealth > 0)
         {
             if (Input.GetMouseButtonDown(0))
             {

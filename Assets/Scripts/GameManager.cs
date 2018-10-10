@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            Debug.Log("Game Over");
+            Debug.Log("Restart");
             //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             FindObjectOfType<ScoreManager>().StartScore();
