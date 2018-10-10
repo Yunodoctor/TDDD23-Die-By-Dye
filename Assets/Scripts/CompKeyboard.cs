@@ -13,7 +13,6 @@ public class CompKeyboard : MonoBehaviour
     public Sprite KeyboardFourDown;
     public Sprite KeyboardAllUp;
 
-
     void Start()
     {
 
