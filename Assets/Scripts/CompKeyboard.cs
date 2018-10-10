@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Keyboard : MonoBehaviour
+public class CompKeyboard : MonoBehaviour
 {
     //Sprites
     public Image Keyboards;

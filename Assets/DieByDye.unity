@@ -1084,7 +1084,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &281563974
 Prefab:
@@ -1791,7 +1791,7 @@ GameObject:
   - component: {fileID: 466842339}
   - component: {fileID: 466842338}
   m_Layer: 5
-  m_Name: Keyboard1111
+  m_Name: Keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2732,7 +2732,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4870257078559754, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1522751837825642, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
       propertyPath: m_Name
@@ -2746,6 +2746,11 @@ Prefab:
     - target: {fileID: 1059759298821168, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311201103688204, guid: aa88890a314a448d7852070c01b8ba70,
+        type: 2}
+      propertyPath: flashLenght
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
@@ -3068,7 +3073,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: [{fileID: 1258940236}]
+  m_Children:
+  - {fileID: 1258940236}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4371,11 +4377,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -6351,6 +6357,52 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1658466509}
+--- !u!1 &1672549628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1672549630}
+  - component: {fileID: 1672549629}
+  m_Layer: 0
+  m_Name: TheKeyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1672549629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672549628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7784233cfc581942b3ea5bed1e4f6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keyboards: {fileID: 466842338}
+  KeyboardOneDown: {fileID: 21300000, guid: cc8aa48af4cc03546958e86a8be6adab, type: 3}
+  KeyboardTwoDown: {fileID: 21300000, guid: 816b92bf6d7a3d64f88708c5c76cbebb, type: 3}
+  KeyboardThreeDown: {fileID: 21300000, guid: da933311ecd14334f9d875f89ff0bfa9, type: 3}
+  KeyboardFourDown: {fileID: 21300000, guid: 0157a8814050e3b4da6fafcbbeb1b276, type: 3}
+  KeyboardAllUp: {fileID: 21300000, guid: f529a26ec68145a4088505e8f7517e15, type: 3}
+--- !u!4 &1672549630
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672549628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 482.3752, y: 248.02129, z: 4.5472903}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1691784912
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,52 +6560,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1711722891}
---- !u!1 &1716306010
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1716306012}
-  - component: {fileID: 1716306011}
-  m_Layer: 5
-  m_Name: Keyboard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1716306011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1716306010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7784233cfc581942b3ea5bed1e4f6ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Keyboards: {fileID: 466842338}
-  KeyboardOneDown: {fileID: 21300000, guid: cc8aa48af4cc03546958e86a8be6adab, type: 3}
-  KeyboardTwoDown: {fileID: 21300000, guid: 816b92bf6d7a3d64f88708c5c76cbebb, type: 3}
-  KeyboardThreeDown: {fileID: 21300000, guid: da933311ecd14334f9d875f89ff0bfa9, type: 3}
-  KeyboardFourDown: {fileID: 21300000, guid: 0157a8814050e3b4da6fafcbbeb1b276, type: 3}
-  KeyboardAllUp: {fileID: 21300000, guid: f529a26ec68145a4088505e8f7517e15, type: 3}
---- !u!4 &1716306012
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1716306010}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 799.99976, y: 605.33307, z: 0}
-  m_LocalScale: {x: 0.5625001, y: 0.5625001, z: 0.5625}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1727896982 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f,
@@ -7846,7 +7852,47 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077562572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2077562574}
+  - component: {fileID: 2077562573}
+  m_Layer: 0
+  m_Name: DamageTaken
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2077562573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077562572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee295431401ac64e95906e27e203cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2077562574
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077562572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 482.3752, y: 248.02129, z: 4.5472903}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2082004836 stripped
 Transform:
