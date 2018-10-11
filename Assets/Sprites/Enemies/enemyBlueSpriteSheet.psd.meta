@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: d5746cff8df9c47a8ad2aba55e8e8c0d
-timeCreated: 1539155293
+guid: 3d992e6154e4d4f418f2e6e2cdb03b72
+timeCreated: 1539247858
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemyBlueSprite_0
-    21300002: enemyBlueSprite_1
+    21300000: enemyBlueSpriteSheet_0
+    21300002: enemyBlueSpriteSheet_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemyBlueSprite_0
+      name: enemyBlueSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemyBlueSprite_1
+      name: enemyBlueSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 128

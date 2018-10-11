@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 32377342489a94dd496ec31a32fd17a6
-timeCreated: 1539074118
+guid: a77f16072805249ab84146371ae796f5
+timeCreated: 1539248371
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemyGreenSprite_0
-    21300002: enemyGreenSprite_1
+    21300000: enemyGreenSpriteSheet_0
+    21300002: enemyGreenSpriteSheet_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemyGreenSprite_0
+      name: enemyGreenSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemyGreenSprite_1
+      name: enemyGreenSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 128
