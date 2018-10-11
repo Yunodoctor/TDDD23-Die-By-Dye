@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114554811358120004}
   - component: {fileID: 58337211174595478}
   - component: {fileID: 50384239067485270}
-  - component: {fileID: 95405319756448988}
+  - component: {fileID: 95434162877350352}
   m_Layer: 12
   m_Name: EnemyBlue
   m_TagString: EnemyBlue
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092116186410394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3420863, y: -0.6489461, z: 0}
+  m_LocalPosition: {x: -3.9061007, y: 0.593932, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ CircleCollider2D:
   m_Offset: {x: 0.118842125, y: 0.04867232}
   serializedVersion: 2
   m_Radius: 0.39268732
---- !u!95 &95405319756448988
+--- !u!95 &95434162877350352
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ Animator:
   m_GameObject: {fileID: 1092116186410394}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 976eb724884024803a243f477693867e, type: 2}
+  m_Controller: {fileID: 9100000, guid: b31381b871f51401b9d1ee64f3666d23, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114691453178052454}
   - component: {fileID: 50002359351793674}
   - component: {fileID: 58871398507165600}
-  - component: {fileID: 95746563306451042}
+  - component: {fileID: 95183739399230120}
   m_Layer: 13
   m_Name: EnemyPurple
   m_TagString: EnemyPurple
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1415926147491714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6298792, y: -1.0228366, z: 0}
+  m_LocalPosition: {x: -4.967117, y: 0.22257638, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ CircleCollider2D:
   m_Offset: {x: 0.11624825, y: 0.039227843}
   serializedVersion: 2
   m_Radius: 0.39489186
---- !u!95 &95746563306451042
+--- !u!95 &95183739399230120
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ Animator:
   m_GameObject: {fileID: 1415926147491714}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a7d767cafb784f59b4faf9d1a92796c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0885c855858764a39bc2f27869b48208, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
