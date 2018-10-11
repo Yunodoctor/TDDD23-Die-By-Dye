@@ -2696,6 +2696,23 @@ Prefab:
       propertyPath: flashLenght
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114109216597404854, guid: aa88890a314a448d7852070c01b8ba70,
+        type: 2}
+      propertyPath: KeyboardAllWhiteUp
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ea2c653a12d94545ba596ce61954ddd,
+        type: 3}
+    - target: {fileID: 114109216597404854, guid: aa88890a314a448d7852070c01b8ba70,
+        type: 2}
+      propertyPath: Keyboards
+      value: 
+      objectReference: {fileID: 466842338}
+    - target: {fileID: 114109216597404854, guid: aa88890a314a448d7852070c01b8ba70,
+        type: 2}
+      propertyPath: KeyboardOneDown
+      value: 
+      objectReference: {fileID: 21300000, guid: 2666a00f3ff978b41bc04e933285f13d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
   m_IsPrefabParent: 0
@@ -6505,6 +6522,10 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0.86764705
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619233655484372, guid: 63f5fe751e59bed42b4eb58ca73ed508, type: 2}
+      propertyPath: m_TagString
+      value: Keyboard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63f5fe751e59bed42b4eb58ca73ed508, type: 2}

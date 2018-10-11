@@ -1,17 +1,24 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 //Using enable and disable of child objects instead of array, so we don't need to update lists and costum data objects.
 
 public class WeaponSwitching : MonoBehaviour
 {
     public int selectedWeapon = 0;
+    private CompKeyboard keys;
+    private CompKeyboard Hej;
+    public Sprite KeyboardAllWhiteUp;
+    public Sprite KeyboardOneDown;
+    public Image Keyboards;
 
-	public float timer = 0f;
+    public float timer = 0f;
     // Use this for initialization
     void Start()
     {
         SelectWeapon();
-
     }
 
     // Update is called once per frame 
@@ -56,8 +63,9 @@ public class WeaponSwitching : MonoBehaviour
 			{
 				previousSelectedWeapon = selectedWeapon;
 				selectedWeapon = 0;
+                Keyboards.sprite = KeyboardOneDown;
 
-				if (previousSelectedWeapon != selectedWeapon)
+                if (previousSelectedWeapon != selectedWeapon)
 				{				
 					SelectWeapon ();
 				}
@@ -67,15 +75,14 @@ public class WeaponSwitching : MonoBehaviour
 
 	public void rainbowWeapon()
 	{
-
 			int previousSelectedWeapon = selectedWeapon;
-			selectedWeapon = 4;			
-			Debug.Log ("Rainbow weapon selected");
+			selectedWeapon = 4;
+            Keyboards.sprite = KeyboardAllWhiteUp;
+            Debug.Log ("Rainbow weapon selected");
 	
 			if (previousSelectedWeapon != selectedWeapon) {				
 				SelectWeapon ();
 			}
-
 	}
 
     void SelectWeapon()

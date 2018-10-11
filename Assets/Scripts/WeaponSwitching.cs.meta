@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - KeyboardAllWhiteUp: {fileID: 21300000, guid: 6ea2c653a12d94545ba596ce61954ddd,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

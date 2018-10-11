@@ -14,6 +14,7 @@ TagManager:
   - Enviroment
   - Enemy
   - Boss
+  - Keyboard
   layers:
   - Default
   - TransparentFX
