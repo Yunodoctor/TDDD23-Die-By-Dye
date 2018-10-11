@@ -69,11 +69,11 @@ GameObject:
   - component: {fileID: 4208908755900092}
   - component: {fileID: 212076655580149986}
   - component: {fileID: 50243069894403080}
-  - component: {fileID: 114836982550036136}
   - component: {fileID: 114495206118867632}
-  - component: {fileID: 95951546654081900}
+  - component: {fileID: 114836982550036136}
   - component: {fileID: 70592051879109104}
   - component: {fileID: 70032366619853396}
+  - component: {fileID: 95328124663236802}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Boss
@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101328727699468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.055312, y: 0.36862022, z: 0}
+  m_LocalPosition: {x: -4.611534, y: 0.96774256, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224962342091122396}
@@ -180,7 +180,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.040527582, y: 0.020263672}
   m_Size: {x: 1.8034883, y: 2.3303456}
   m_Direction: 0
---- !u!95 &95951546654081900
+--- !u!95 &95328124663236802
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -189,7 +189,7 @@ Animator:
   m_GameObject: {fileID: 1101328727699468}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2addde160cd3b46e683f50e6dbd628c2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3a5ff74dfa0d643fba8d30fc1016ebc0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -411,12 +411,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab096c12b5819488f8503142a9ffd0b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 10cebcb502028474a8a63f97a722e72a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
