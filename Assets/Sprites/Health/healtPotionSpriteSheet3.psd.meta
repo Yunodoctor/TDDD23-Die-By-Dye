@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: a75fb42e8332c483ba6d5c92e4bf891b
-timeCreated: 1539194810
+guid: f45c354e91c864582b98af53506ad9b4
+timeCreated: 1539255760
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: healtPotionSpriteSheet_0
-    21300002: healtPotionSpriteSheet_1
-    21300004: healtPotionSpriteSheet_2
-    21300006: healtPotionSpriteSheet_3
-    21300008: healtPotionSpriteSheet_4
-    21300010: healtPotionSpriteSheet_5
-    21300012: healtPotionSpriteSheet_6
-    21300014: healtPotionSpriteSheet_7
-    21300016: healtPotionSpriteSheet_8
-    21300018: healtPotionSpriteSheet_9
+    21300000: healtPotionSpriteSheet3_0
+    21300002: healtPotionSpriteSheet3_1
+    21300004: healtPotionSpriteSheet3_2
+    21300006: healtPotionSpriteSheet3_3
+    21300008: healtPotionSpriteSheet3_4
+    21300010: healtPotionSpriteSheet3_5
+    21300012: healtPotionSpriteSheet3_6
+    21300014: healtPotionSpriteSheet3_7
+    21300016: healtPotionSpriteSheet3_8
+    21300018: healtPotionSpriteSheet3_9
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_0
+      name: healtPotionSpriteSheet3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_1
+      name: healtPotionSpriteSheet3_1
       rect:
         serializedVersion: 2
         x: 128
@@ -138,7 +138,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_2
+      name: healtPotionSpriteSheet3_2
       rect:
         serializedVersion: 2
         x: 256
@@ -152,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_3
+      name: healtPotionSpriteSheet3_3
       rect:
         serializedVersion: 2
         x: 384
@@ -166,7 +166,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_4
+      name: healtPotionSpriteSheet3_4
       rect:
         serializedVersion: 2
         x: 512
@@ -180,7 +180,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_5
+      name: healtPotionSpriteSheet3_5
       rect:
         serializedVersion: 2
         x: 640
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_6
+      name: healtPotionSpriteSheet3_6
       rect:
         serializedVersion: 2
         x: 768
@@ -208,7 +208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_7
+      name: healtPotionSpriteSheet3_7
       rect:
         serializedVersion: 2
         x: 896
@@ -222,7 +222,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_8
+      name: healtPotionSpriteSheet3_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -236,7 +236,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healtPotionSpriteSheet_9
+      name: healtPotionSpriteSheet3_9
       rect:
         serializedVersion: 2
         x: 1152
