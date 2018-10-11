@@ -2996,7 +2996,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -320615393
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bf1be4b26d8e246f8be092a5ce8ab61a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5106,6 +5106,36 @@ Prefab:
       propertyPath: Keyboards
       value: 
       objectReference: {fileID: 466842338}
+    - target: {fileID: 114375375527846684, guid: 3283374cf0684c743811307f2d336099,
+        type: 2}
+      propertyPath: KeyboardOneDown
+      value: 
+      objectReference: {fileID: 21300000, guid: 2666a00f3ff978b41bc04e933285f13d,
+        type: 3}
+    - target: {fileID: 114375375527846684, guid: 3283374cf0684c743811307f2d336099,
+        type: 2}
+      propertyPath: KeyboardTwoDown
+      value: 
+      objectReference: {fileID: 21300000, guid: 943325356f7d7a6458f3a419355f1ccd,
+        type: 3}
+    - target: {fileID: 114375375527846684, guid: 3283374cf0684c743811307f2d336099,
+        type: 2}
+      propertyPath: KeyboardThreeDown
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ecc5b0d41b3ca74aa7016100bb75abb,
+        type: 3}
+    - target: {fileID: 114375375527846684, guid: 3283374cf0684c743811307f2d336099,
+        type: 2}
+      propertyPath: KeyboardFourDown
+      value: 
+      objectReference: {fileID: 21300000, guid: b61f254626829c440b3a4279971dda33,
+        type: 3}
+    - target: {fileID: 114375375527846684, guid: 3283374cf0684c743811307f2d336099,
+        type: 2}
+      propertyPath: KeyboardAllUp
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ea2c653a12d94545ba596ce61954ddd,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3283374cf0684c743811307f2d336099, type: 2}
   m_IsPrefabParent: 0
@@ -6459,7 +6489,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8344a7a5508f74f4c9bd01163f6d15d7,
+      objectReference: {fileID: 21300000, guid: 2666a00f3ff978b41bc04e933285f13d,
         type: 3}
     - target: {fileID: 114508748618859082, guid: 63f5fe751e59bed42b4eb58ca73ed508,
         type: 2}
@@ -7072,7 +7102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -77.5, y: -12.409973}
+  m_AnchoredPosition: {x: -77.5, y: -14.8}
   m_SizeDelta: {x: 91.4, y: 21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829738168
