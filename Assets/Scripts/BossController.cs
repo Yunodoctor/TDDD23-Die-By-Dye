@@ -13,7 +13,8 @@ public class BossController : MonoBehaviour {
 	public Transform endPoint;
 	public float speed;
 	private int current;
-
+	public GameObject deathEffect;
+	public GameObject deathEffect2;
 	public Slider healthBar;
 
 	void Start()
@@ -44,10 +45,14 @@ public class BossController : MonoBehaviour {
 		//if boss take healt is zero
 		if (curHealth <= 0)
 		{
-			//Instantiate(deathEffect, transform.position, Quaternion.identity);
+
 			//ScoreManager.scoreValue += scorePoint;
+			Instantiate(deathEffect, transform.position, Quaternion.identity);
+			Instantiate(deathEffect2, transform.position, Quaternion.identity);
+
 			Destroy(gameObject);
 			FindObjectOfType<WeaponSwitching>().rainbowWeapon();
+
 		}
 
 

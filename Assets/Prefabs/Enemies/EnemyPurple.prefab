@@ -113,7 +113,7 @@ MonoBehaviour:
   HealthDrop: 0
   HealthDropObject: {fileID: 1823952816921426, guid: e0763366cf471984bb90f14f2151dd2c,
     type: 2}
-  deathEffect: {fileID: 1622995045825182, guid: b51a18cd36a254fa3be71d0d9c682198,
+  deathEffect: {fileID: 1087451707055750, guid: e4e0cc609b5004023bcbf7a23bda2ba6,
     type: 2}
 --- !u!212 &212610017650827146
 SpriteRenderer:

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198327917053187750}
   - component: {fileID: 199312506714994508}
   m_Layer: 0
-  m_Name: purpleExplotion
+  m_Name: rainbowExplotion 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 1087451707055750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -190,12 +190,12 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.45280096, g: 0, b: 0.7794118, a: 1}
-      maxColor: {r: 0.7105979, g: 0.25, b: 1, a: 1}
+      minColor: {r: 0.35686275, g: 0.9607844, b: 0.3647059, a: 1}
+      maxColor: {r: 0.9843138, g: 0.5921569, b: 0.27058825, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key0: {r: 0.40000004, g: 0.8980393, b: 0.40784317, a: 1}
+        key1: {r: 0.9843138, g: 0.5647059, b: 0.23137257, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -218,7 +218,7 @@ ParticleSystem:
         atime5: 0
         atime6: 0
         atime7: 0
-        m_Mode: 0
+        m_Mode: 1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
