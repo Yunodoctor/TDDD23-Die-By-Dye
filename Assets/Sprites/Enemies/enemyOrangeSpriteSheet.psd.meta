@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: fac23187417af4622b802ae134492564
-timeCreated: 1539077950
+guid: 8f2fe052d79594e609f48ad38b917445
+timeCreated: 1539249188
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemyOrangeSprite_0
-    21300002: enemyOrangeSprite_1
+    21300000: enemyOrangeSpriteSheet_0
+    21300002: enemyOrangeSpriteSheet_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemyOrangeSprite_0
+      name: enemyOrangeSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemyOrangeSprite_1
+      name: enemyOrangeSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 128

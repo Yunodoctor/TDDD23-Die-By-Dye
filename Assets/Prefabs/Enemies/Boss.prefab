@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 114836982550036136}
   - component: {fileID: 70592051879109104}
   - component: {fileID: 70032366619853396}
-  - component: {fileID: 95328124663236802}
+  - component: {fileID: 95577714602834640}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Boss
@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101328727699468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.611534, y: 0.96774256, z: 0}
+  m_LocalPosition: {x: -4.1668444, y: 0.5880587, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224962342091122396}
@@ -180,7 +180,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.040527582, y: 0.020263672}
   m_Size: {x: 1.8034883, y: 2.3303456}
   m_Direction: 0
---- !u!95 &95328124663236802
+--- !u!95 &95577714602834640
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -189,7 +189,7 @@ Animator:
   m_GameObject: {fileID: 1101328727699468}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a5ff74dfa0d643fba8d30fc1016ebc0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8c32ae734364f4903a6b66323c995525, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
