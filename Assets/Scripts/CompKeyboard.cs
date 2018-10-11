@@ -15,6 +15,7 @@ public class CompKeyboard : MonoBehaviour
 
     void Start()
     {
+        Keyboards.sprite = KeyboardOneDown;
     }
 
     // Update is called once per frame
