@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114945475164954454}
   - component: {fileID: 50967879696261090}
   - component: {fileID: 58799698228325446}
-  - component: {fileID: 95004044491474278}
+  - component: {fileID: 95357499958323810}
   m_Layer: 10
   m_Name: EnemyGreen
   m_TagString: EnemyGreen
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247815120574532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.888279, y: -0.4787684, z: -2}
+  m_LocalPosition: {x: -4.1978807, y: -1.0241175, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ CircleCollider2D:
   m_Offset: {x: 0.10584378, y: 0.07435164}
   serializedVersion: 2
   m_Radius: 0.36261895
---- !u!95 &95004044491474278
+--- !u!95 &95357499958323810
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ Animator:
   m_GameObject: {fileID: 1247815120574532}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f4bfb50f738794037bc83283f6ce6bcc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ab113609a2d941bca717de7595df5b1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
