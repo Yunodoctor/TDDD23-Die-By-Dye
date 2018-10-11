@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: acd338d5857f34d209daf08445043477
-timeCreated: 1539081543
+guid: 0a10760e687454afa97e0968cf45a2a5
+timeCreated: 1539249962
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemyPurpleSprite_0
-    21300002: enemyPurpleSprite_1
+    21300000: enemyPurpleSpriteSheet_0
+    21300002: enemyPurpleSpriteSheet_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemyPurpleSprite_0
+      name: enemyPurpleSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemyPurpleSprite_1
+      name: enemyPurpleSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 128
