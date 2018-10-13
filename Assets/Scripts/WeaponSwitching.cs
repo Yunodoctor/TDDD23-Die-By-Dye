@@ -14,15 +14,14 @@ public class WeaponSwitching : MonoBehaviour
     public Sprite KeyboardOneDown;
     public Image Keyboards;
 
-    public float timer = 0f;
-	public Text Timer;
-    // Use this for initialization
+    public float timer;
+    public Text TimerText;
+
     void Start()
     {
         SelectWeapon();
     }
 
-    // Update is called once per frame 
     void Update()
     {
 		
@@ -59,11 +58,10 @@ public class WeaponSwitching : MonoBehaviour
         }
 
 		if (selectedWeapon == 4) {
-			timer += Time.deltaTime;
+			timer -= Time.deltaTime;
+            TimerText.text = "Rainbow weapon: " + (int)timer;
 
-			Timer.text = "Rainbow weapon: " + timer;
-
-			if(timer >= 10)
+			if(timer <= 0)
 			{
 				previousSelectedWeapon = selectedWeapon;
 				selectedWeapon = 0;
@@ -75,10 +73,12 @@ public class WeaponSwitching : MonoBehaviour
 				}
 			}
 		}
+
     }
 
-	public void rainbowWeapon()
+public void rainbowWeapon()
 	{
+            timer = 10f;
 			int previousSelectedWeapon = selectedWeapon;
 			selectedWeapon = 4;
             Keyboards.sprite = KeyboardAllWhiteUp;
@@ -106,6 +106,7 @@ public class WeaponSwitching : MonoBehaviour
             i++;
         }
     }
+
 
 
 }

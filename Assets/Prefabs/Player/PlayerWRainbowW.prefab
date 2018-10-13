@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4736173591107630}
   - component: {fileID: 212213886253307242}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,13 +37,13 @@ GameObject:
   - component: {fileID: 4557993071138850}
   - component: {fileID: 212717505840604208}
   - component: {fileID: 114308885257943394}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: weaponRainbow
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1101102204170386
 GameObject:
   m_ObjectHideFlags: 1
@@ -53,7 +53,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4656267017821910}
   - component: {fileID: 212160592380104290}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 4473381010750466}
   - component: {fileID: 212602261070547174}
   - component: {fileID: 114347888174558970}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: weaponGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4525580607101884}
   - component: {fileID: 212372364741726284}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4710478268504234}
   - component: {fileID: 212228881127137948}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4934146747405378}
   - component: {fileID: 212521133244825680}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4157722008481216}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,13 +150,13 @@ GameObject:
   - component: {fileID: 4635480596963116}
   - component: {fileID: 212544936748339124}
   - component: {fileID: 114819803228641028}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: weaponPurple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1522751837825642
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 70946798739894012}
   - component: {fileID: 70709893450503712}
   - component: {fileID: 95394667572152744}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: PlayerWRainbowW
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4498366421031242}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Shot Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4681650030730336}
   - component: {fileID: 212457628715244186}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4655160769059340}
   - component: {fileID: 212488490270660466}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4879401840182066}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,13 +251,13 @@ GameObject:
   - component: {fileID: 4726885968658592}
   - component: {fileID: 212271086091083970}
   - component: {fileID: 114508769693199234}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: weaponOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1866421856626482
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,13 +268,13 @@ GameObject:
   - component: {fileID: 4071972171673798}
   - component: {fileID: 212425316766936624}
   - component: {fileID: 114116565216962118}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: weaponBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1874479365268808
 GameObject:
   m_ObjectHideFlags: 1
@@ -283,7 +283,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4306500113007874}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4509212027861540}
   - component: {fileID: 212645400971722958}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: AimCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4271607710614828}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Shot Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114520922541924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.1359044, w: 0.990722}
   m_LocalPosition: {x: 0.436, y: -0.121, z: 1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children:
@@ -669,7 +669,7 @@ MonoBehaviour:
   KeyboardOneDown: {fileID: 21300000, guid: 2666a00f3ff978b41bc04e933285f13d, type: 3}
   Keyboards: {fileID: 0}
   timer: 0
-  Timer: {fileID: 0}
+  TimerText: {fileID: 0}
 --- !u!114 &114116565216962118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -840,7 +840,7 @@ SpriteRenderer:
   m_SortingLayerID: -1469383747
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c1833f1ffefc44c589f6a535f69b717, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 6c1833f1ffefc44c589f6a535f69b717, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

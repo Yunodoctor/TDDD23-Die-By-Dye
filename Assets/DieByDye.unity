@@ -2857,7 +2857,7 @@ Prefab:
       objectReference: {fileID: 466842338}
     - target: {fileID: 114109216597404854, guid: aa88890a314a448d7852070c01b8ba70,
         type: 2}
-      propertyPath: Timer
+      propertyPath: TimerText
       value: 
       objectReference: {fileID: 1179016081}
     - target: {fileID: 1522751837825642, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
@@ -4607,8 +4607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -172}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchoredPosition: {x: 107.1, y: -177.1}
+  m_SizeDelta: {x: 814.1, y: 160.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179016081
 MonoBehaviour:
@@ -4636,7 +4636,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -6230,6 +6230,11 @@ Prefab:
     - target: {fileID: 58756419912165376, guid: b21f5622c06ce463496877e2c263893f,
         type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58756419912165376, guid: b21f5622c06ce463496877e2c263893f,
+        type: 2}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

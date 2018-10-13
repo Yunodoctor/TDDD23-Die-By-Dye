@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198327917053187750}
   - component: {fileID: 199312506714994508}
   m_Layer: 0
-  m_Name: rainbowExplotion
+  m_Name: rainbowExplotionP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
