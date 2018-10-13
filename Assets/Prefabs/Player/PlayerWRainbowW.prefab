@@ -430,6 +430,7 @@ MonoBehaviour:
   Keyboards: {fileID: 0}
   timer: 0
   TimerText: {fileID: 0}
+  flashLenght: 8
 --- !u!114 &114116565216962118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -474,6 +475,8 @@ MonoBehaviour:
   movementSpeed: 5
   curHealth: 5
   maxHealth: 5
+  healthEffect: {fileID: 1087451707055750, guid: f454f52734c5745bfb2c6fc33796c2f6,
+    type: 2}
   flashLenght: 0.25
   damageFace: {fileID: 21300000, guid: 710e216673e6f47559b274c5e4aee788, type: 3}
   ani: {fileID: 95394667572152744}

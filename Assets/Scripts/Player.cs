@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     //Health stats
     public int curHealth;
     public int maxHealth = 5;
+	public GameObject healthEffect;
 
 	//Damage stats
 	private bool flashActive;
@@ -120,5 +121,6 @@ public class Player : MonoBehaviour
     public void playerTakeHealth(int hp)
     {
         curHealth += hp;
+		Instantiate(healthEffect, transform.position, Quaternion.identity);
     }
 }
