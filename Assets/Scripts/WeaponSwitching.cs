@@ -65,6 +65,7 @@ public class WeaponSwitching : MonoBehaviour
 			{
 				previousSelectedWeapon = selectedWeapon;
 				selectedWeapon = 0;
+                Destroy(TimerText);
                 Keyboards.sprite = KeyboardOneDown;
 
                 if (previousSelectedWeapon != selectedWeapon)
