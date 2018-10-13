@@ -13,8 +13,10 @@ public class BossController : MonoBehaviour {
 	public Transform endPoint;
 	public float speed;
 	private int current;
-	public GameObject deathEffect;
-	public GameObject deathEffect2;
+	public GameObject deathEffectG;
+	public GameObject deathEffectB;
+	public GameObject deathEffectO;
+	public GameObject deathEffectP;
 	public Slider healthBar;
 
 	void Start()
@@ -47,8 +49,10 @@ public class BossController : MonoBehaviour {
 		{
 
 			//ScoreManager.scoreValue += scorePoint;
-			Instantiate(deathEffect, transform.position, Quaternion.identity);
-			Instantiate(deathEffect2, transform.position, Quaternion.identity);
+			Instantiate(deathEffectG, transform.position, Quaternion.identity);
+			Instantiate(deathEffectB, transform.position, Quaternion.identity);
+			Instantiate(deathEffectO, transform.position, Quaternion.identity);
+			Instantiate(deathEffectP, transform.position, Quaternion.identity);
 
 			Destroy(gameObject);
 			FindObjectOfType<WeaponSwitching>().rainbowWeapon();

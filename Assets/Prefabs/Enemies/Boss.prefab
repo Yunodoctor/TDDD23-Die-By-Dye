@@ -360,9 +360,13 @@ MonoBehaviour:
   damage2Player: 1
   endPoint: {fileID: 4978248328004622, guid: e52e79b7303ee439aa7a974f6454ee73, type: 2}
   speed: 0.5
-  deathEffect: {fileID: 1087451707055750, guid: 51f8a7cc8f06b46cabed0bd9ab5c3b42,
+  deathEffectG: {fileID: 1087451707055750, guid: 51f8a7cc8f06b46cabed0bd9ab5c3b42,
     type: 2}
-  deathEffect2: {fileID: 1087451707055750, guid: 9d008e583196c4a30a9b6bc1cb167b93,
+  deathEffectB: {fileID: 1087451707055750, guid: 6981380a33f974b8992f975cdd988182,
+    type: 2}
+  deathEffectO: {fileID: 1087451707055750, guid: 9fe75a3962b72419eb52b776af1cc8d0,
+    type: 2}
+  deathEffectP: {fileID: 1087451707055750, guid: 36e7b3c3e67374d70903873d4a09cb70,
     type: 2}
   healthBar: {fileID: 114694597246236858}
 --- !u!114 &114999899350627270

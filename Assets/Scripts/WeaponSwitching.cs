@@ -15,6 +15,7 @@ public class WeaponSwitching : MonoBehaviour
     public Image Keyboards;
 
     public float timer = 0f;
+	public Text Timer;
     // Use this for initialization
     void Start()
     {
@@ -24,6 +25,7 @@ public class WeaponSwitching : MonoBehaviour
     // Update is called once per frame 
     void Update()
     {
+		
         int previousSelectedWeapon = selectedWeapon;
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -58,6 +60,8 @@ public class WeaponSwitching : MonoBehaviour
 
 		if (selectedWeapon == 4) {
 			timer += Time.deltaTime;
+
+			Timer.text = "Rainbow weapon: " + timer;
 
 			if(timer >= 10)
 			{

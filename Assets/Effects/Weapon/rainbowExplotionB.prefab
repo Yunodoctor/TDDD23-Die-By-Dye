@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198327917053187750}
   - component: {fileID: 199312506714994508}
   m_Layer: 0
-  m_Name: orangeExplotion
+  m_Name: rainbowExplotionB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,8 +35,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087451707055750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1191072, y: -0.9549163, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.68, y: 0.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -101,7 +101,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 623876761
+  randomSeed: 1462567052
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -149,7 +149,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 2.5
       minScalar: 2
       maxCurve:
         serializedVersion: 2
@@ -190,8 +190,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.8455882, g: 0.33666936, b: 0, a: 1}
-      maxColor: {r: 1, g: 0.5605444, b: 0.2205882, a: 1}
+      minColor: {r: 0, g: 0.3057938, b: 0.83823526, a: 1}
+      maxColor: {r: 0.30147058, g: 0.56955487, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -661,7 +661,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -747,7 +747,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 20
+        scalar: 10
         minScalar: 0
         maxCurve:
           serializedVersion: 2
@@ -1457,7 +1457,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -5
+      scalar: -3
       minScalar: 0
       maxCurve:
         serializedVersion: 2

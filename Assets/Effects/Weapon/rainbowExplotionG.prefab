@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198327917053187750}
   - component: {fileID: 199312506714994508}
   m_Layer: 0
-  m_Name: rainbowExplotion 1
+  m_Name: rainbowExplotionG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087451707055750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.1492524, y: -0.5941005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,7 +101,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -702821703
+  randomSeed: -1659729626
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -149,7 +149,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1.5
       minScalar: 2
       maxCurve:
         serializedVersion: 2
@@ -190,12 +190,12 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.35686275, g: 0.9607844, b: 0.3647059, a: 1}
-      maxColor: {r: 0.9843138, g: 0.5921569, b: 0.27058825, a: 1}
+      minColor: {r: 0, g: 0.77205884, b: 0.004195948, a: 1}
+      maxColor: {r: 0.32941177, g: 0.9921569, b: 0.32156864, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.40000004, g: 0.8980393, b: 0.40784317, a: 1}
-        key1: {r: 0.9843138, g: 0.5647059, b: 0.23137257, a: 1}
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -218,7 +218,7 @@ ParticleSystem:
         atime5: 0
         atime6: 0
         atime7: 0
-        m_Mode: 1
+        m_Mode: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -661,7 +661,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -747,7 +747,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 20
+        scalar: 35
         minScalar: 0
         maxCurve:
           serializedVersion: 2
@@ -1199,7 +1199,7 @@ ParticleSystem:
     flipV: 0
     randomRow: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: edb433e2a05984e2aa674f3fd228957d, type: 3}
+    - sprite: {fileID: 21300000, guid: ad0c5c266ece34c3b810477a0046d6c4, type: 3}
   VelocityModule:
     enabled: 0
     x:
@@ -3462,7 +3462,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
