@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212566319053557054}
   - component: {fileID: 114497798064783364}
   - component: {fileID: 61491934915291798}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ColorTrail12
-  m_TagString: Untagged
+  m_TagString: Trail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316293050864952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.179435, y: 0.83487844, z: 0.5}
+  m_LocalPosition: {x: 1.3343135, y: -0.14728178, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,18 +54,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08240253, y: 0.04120159}
+  m_Offset: {x: -0.04795891, y: -0.00701952}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.95, y: 1.7}
-    newSize: {x: 1.95, y: 1.7}
+    oldSize: {x: 1.85, y: 1.64}
+    newSize: {x: 1.85, y: 1.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.785195, y: 1.5516751}
+  m_Size: {x: 1.9918565, y: 1.6481173}
   m_EdgeRadius: 0
 --- !u!114 &114497798064783364
 MonoBehaviour:
@@ -117,7 +117,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.7}
+  m_Size: {x: 1.85, y: 1.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

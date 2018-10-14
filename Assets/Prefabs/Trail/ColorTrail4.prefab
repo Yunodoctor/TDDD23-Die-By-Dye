@@ -21,11 +21,10 @@ GameObject:
   - component: {fileID: 4700755088439848}
   - component: {fileID: 212346262384645318}
   - component: {fileID: 114769342775154732}
-  - component: {fileID: 70354566434177236}
-  - component: {fileID: 70786675317155848}
-  m_Layer: 0
+  - component: {fileID: 61771164765054632}
+  m_Layer: 17
   m_Name: ColorTrail4
-  m_TagString: Untagged
+  m_TagString: Trail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,14 +36,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160194193165392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.218797, y: -1.9008883, z: 0.5}
+  m_LocalPosition: {x: -3.2260184, y: -2.4067817, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &70354566434177236
-CapsuleCollider2D:
+--- !u!61 &61771164765054632
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,24 +54,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.082402885, y: -0.00000023841858}
-  m_Size: {x: 1.158935, y: 1.5544679}
-  m_Direction: 0
---- !u!70 &70786675317155848
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1160194193165392}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.63449895, y: 0.3872919}
-  m_Size: {x: 0.45027518, y: 0.61507726}
-  m_Direction: 0
+  m_Offset: {x: 0.061998606, y: -0.013777196}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.95, y: 1.7}
+    newSize: {x: 1.95, y: 1.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8260026, y: 1.5346702}
+  m_EdgeRadius: 0
 --- !u!114 &114769342775154732
 MonoBehaviour:
   m_ObjectHideFlags: 1

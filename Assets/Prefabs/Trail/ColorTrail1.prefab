@@ -21,11 +21,10 @@ GameObject:
   - component: {fileID: 4241234980732960}
   - component: {fileID: 212929494311340856}
   - component: {fileID: 114477872450769894}
-  - component: {fileID: 70630708398973238}
-  - component: {fileID: 70710642834993788}
-  m_Layer: 0
+  - component: {fileID: 61110162976563202}
+  m_Layer: 17
   m_Name: ColorTrail1
-  m_TagString: Untagged
+  m_TagString: Trail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,14 +36,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748100905940782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3739562, y: -2.2140183, z: 0.5}
+  m_LocalPosition: {x: -6.077948, y: -0.17483664, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &70630708398973238
-CapsuleCollider2D:
+--- !u!61 &61110162976563202
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,24 +54,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.31326485, y: -0.019249856}
-  m_Size: {x: 1.4331613, y: 1.5816203}
-  m_Direction: 0
---- !u!70 &70710642834993788
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748100905940782}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.6015397, y: -0.41201305}
-  m_Size: {x: 0.48323262, y: 0.6645193}
-  m_Direction: 0
+  m_Offset: {x: -0.00000023841858, y: -0.02066636}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.85, y: 1.61}
+    newSize: {x: 1.85, y: 1.61}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8948903, y: 1.6311128}
+  m_EdgeRadius: 0
 --- !u!114 &114477872450769894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,7 +117,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.7}
+  m_Size: {x: 1.85, y: 1.61}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
