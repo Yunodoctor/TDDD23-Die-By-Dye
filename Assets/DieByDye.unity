@@ -5743,8 +5743,8 @@ MonoBehaviour:
   enemyPattern:
   - {fileID: 1983445497990830, guid: 0297018b439cb4f97895f39971ac6241, type: 2}
   - {fileID: 1731999363545798, guid: f4bb6e9edf28b481c977ba08ba56f586, type: 2}
-  - {fileID: 1983445497990830, guid: 0297018b439cb4f97895f39971ac6241, type: 2}
-  - {fileID: 1731999363545798, guid: f4bb6e9edf28b481c977ba08ba56f586, type: 2}
+  - {fileID: 1046890071976394, guid: 5aff47fd56bf6465bb5018df881f6b09, type: 2}
+  - {fileID: 1318407780442548, guid: 2cae597c5f0554f58bcc47b21b3f9236, type: 2}
   startTimeBtwSpawn: 10
   decreaseTime: 0.08
   minTime: 2
