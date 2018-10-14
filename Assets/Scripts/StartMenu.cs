@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 public class StartMenu : MonoBehaviour {
 
     public AudioMixer audioMixer;
+    public AudioMixer SFX;
 
 	public void PlayGame () {
 
@@ -15,8 +16,12 @@ public class StartMenu : MonoBehaviour {
 
     public void SetVolume (float Volume)
     {
-        Debug.Log(Volume);
         audioMixer.SetFloat("Volume", Volume);
+    }
+
+    public void SetSFX(float SFXvolume)
+    {
+        SFX.SetFloat("SFX", SFXvolume);
     }
 
     public void QuitGame()
