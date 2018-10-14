@@ -32,7 +32,7 @@ public class WeaponSwitching : MonoBehaviour
 	
         int previousSelectedWeapon = selectedWeapon;
 
-        if(timer == 0)
+        if (timer <= 0)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
@@ -61,25 +61,26 @@ public class WeaponSwitching : MonoBehaviour
         }
 
 		if (selectedWeapon == 4) {
-			timer -= Time.deltaTime;
+            Keyboards.sprite = KeyboardAllWhiteUp;
+            timer -= Time.deltaTime;
             TimerText.text = "Rainbow weapon: " + (int)timer;
 
 			if (flashActive) {
 				if (flashCounter > flashLenght * 1f) {  //0.66 makes two blinks
-					TimerText.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);	
-				} else if (flashCounter > 0.8f) {
+					TimerText.color = new Color (0.5f, 0f, 0f, 1f);	
+				} else if (timer > 3) {
 					TimerText.color = new Color (1f, 1f, 1f, 1f);
 				}
-				else if (flashCounter > 0.6f) {
-					Debug.Log("Second blink");
-					TimerText.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
+				else if (timer == 3) {
+					TimerText.color = new Color (0.5f, 0f, 0f, 1f);
 				}
-				else if (flashCounter > 0.4f) {
+				else if (timer == 2) {
 					TimerText.color = new Color (1f, 1f, 1f, 1f);
 				}
-				else if (flashCounter > 0f) {
-					TimerText.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
-				} else {
+				else if (timer == 1) {
+					TimerText.color = new Color (0.5f, 0f, 0f, 1f);
+				}
+                else if(timer >= 0){
 					TimerText.color = new Color (1f, 1f, 1f, 1f);	
 					flashActive = false;
 				}
