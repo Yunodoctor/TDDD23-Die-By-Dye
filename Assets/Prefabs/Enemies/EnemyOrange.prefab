@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 1
-  health: 2
+  health: 1
   stopDistance: 0.5
   HealthDrop: 0
   HealthDropObject: {fileID: 1823952816921426, guid: e0763366cf471984bb90f14f2151dd2c,
