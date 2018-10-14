@@ -56,9 +56,7 @@ public class BossController : MonoBehaviour {
 
 			Destroy(gameObject);
 			FindObjectOfType<WeaponSwitching>().rainbowWeapon();
-
 		}
-
 
 	}
 
@@ -78,7 +76,8 @@ public class BossController : MonoBehaviour {
 	public void bossTakeDamage(int damage)
 	{
 		curHealth -= damage;
-	}
+        FindObjectOfType<AudioManager>().Play("EnemyDeathSound");
+    }
 
 
 }

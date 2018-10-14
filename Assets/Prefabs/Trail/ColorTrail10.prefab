@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4457898730497688}
   - component: {fileID: 212798919931822782}
+  - component: {fileID: 114695306413045904}
+  - component: {fileID: 70290531606939890}
   m_Layer: 0
   m_Name: ColorTrail10
   m_TagString: Untagged
@@ -34,12 +36,38 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532669753802272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0749319, y: 1.6045566, z: 0.5}
+  m_LocalPosition: {x: -3.75832, y: 1.8566707, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &70290531606939890
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532669753802272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18952584, y: -0.00000023841858}
+  m_Size: {x: 0.9117279, y: 1.521507}
+  m_Direction: 0
+--- !u!114 &114695306413045904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532669753802272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055e830734f05284d881d0631286b6f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212798919931822782
 SpriteRenderer:
   m_ObjectHideFlags: 1

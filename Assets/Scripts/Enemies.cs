@@ -61,6 +61,7 @@ public class Enemies : MonoBehaviour
     public void enemyTakeDamage(int damage)
     {
         health -= damage;
+        FindObjectOfType<AudioManager>().Play("EnemyDeathSound");
     }
 
     //Collider enters the trigger
