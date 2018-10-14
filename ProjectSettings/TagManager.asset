@@ -66,6 +66,12 @@ TagManager:
   - name: Weapon
     uniqueID: 2347444731
     locked: 0
+  - name: Special trees
+    uniqueID: 4268334057
+    locked: 0
+  - name: Boss
+    uniqueID: 3253636703
+    locked: 0
   - name: TreeFrame
     uniqueID: 2814703821
     locked: 0
