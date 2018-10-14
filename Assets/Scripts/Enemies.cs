@@ -9,6 +9,7 @@ public class Enemies : MonoBehaviour
     private Transform target; //Holds the gameObject the enemies are chasing
     private Player player;
     public float stopDistance;
+	public float timeBtwDmg = 2.5f;
 
     //Drop
     public bool HealthDrop;
@@ -57,8 +58,9 @@ public class Enemies : MonoBehaviour
         {
             movementSpeed = 0f;
         }
-    }
 
+    }
+		
     //Health decrease system
     public void enemyTakeDamage(int damage)
     {
@@ -69,10 +71,11 @@ public class Enemies : MonoBehaviour
     //Collider enters the trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            player.playerTakeDamage(1);
 
-        }
+		if (collision.CompareTag ("Player")) {
+			player.playerTakeDamage (1);
+		
+		}
+
     }
 }

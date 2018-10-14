@@ -8,16 +8,15 @@ public class BossTrail : MonoBehaviour {
     public float startTimeBtwSpawns;
 
 	public GameObject[] Trail;
-    private BossController Boss;
 
     void Start ()
     {
-        Boss = GetComponent<BossController>();
 
 	}
 
     private void Update()
     {
+
         if (timeBtwSpawns <= 0)
         {
             int rand = Random.Range(0, Trail.Length);

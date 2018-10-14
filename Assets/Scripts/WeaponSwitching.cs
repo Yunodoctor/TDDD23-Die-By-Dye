@@ -20,6 +20,8 @@ public class WeaponSwitching : MonoBehaviour
 	public float flashLenght;
 	private float flashCounter;
 
+	private bool isKeyEnable = true;
+
     void Start()
     {
         SelectWeapon();
@@ -108,12 +110,11 @@ public void rainbowWeapon()
 			int previousSelectedWeapon = selectedWeapon;
 			selectedWeapon = 4;
             Keyboards.sprite = KeyboardAllWhiteUp;
-            Debug.Log ("Rainbow weapon selected");
+
 	
 			if (previousSelectedWeapon != selectedWeapon) {				
 				SelectWeapon ();
 			}
-
 
 		flashActive = true;
 		flashCounter = flashLenght;

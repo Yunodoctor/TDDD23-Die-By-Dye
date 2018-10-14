@@ -9,6 +9,7 @@ public class BossController : MonoBehaviour {
 	public int damage2Player; 
 	private float timeBtwDamage = 1.5f;
 	private Player player;
+	private int scorePoint = 100;
 
 	public Transform endPoint;
 	public float speed;
@@ -48,7 +49,6 @@ public class BossController : MonoBehaviour {
 		if (curHealth <= 0)
 		{
 
-			//ScoreManager.scoreValue += scorePoint;
 			Instantiate(deathEffectG, transform.position, Quaternion.identity);
 			Instantiate(deathEffectB, transform.position, Quaternion.identity);
 			Instantiate(deathEffectO, transform.position, Quaternion.identity);
@@ -56,6 +56,8 @@ public class BossController : MonoBehaviour {
 
 			Destroy(gameObject);
 			FindObjectOfType<WeaponSwitching>().rainbowWeapon();
+
+			ScoreManager.scoreValue += scorePoint;
 		}
 
 	}
