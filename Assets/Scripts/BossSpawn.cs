@@ -9,7 +9,7 @@ public class BossSpawn : MonoBehaviour {
 	private float timeBtwSpawn;
 	public float startTimeBtwSpawn;
 	float timer = 0f;
-	float startSpawning = 5f;
+	float startSpawning = 80f;
 
 	// Update is called once per frame
 	private void Update()
