@@ -9,6 +9,8 @@ public class PowerDownSlow : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		Physics2D.IgnoreCollision (player.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)

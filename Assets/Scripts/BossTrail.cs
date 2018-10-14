@@ -7,12 +7,13 @@ public class BossTrail : MonoBehaviour {
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
 
-    public GameObject[] Trail;
+	public GameObject[] Trail;
     private BossController Boss;
 
     void Start ()
     {
         Boss = GetComponent<BossController>();
+
 	}
 
     private void Update()
