@@ -64,8 +64,9 @@ public class WeaponSwitching : MonoBehaviour
             Keyboards.sprite = KeyboardAllWhiteUp;
             timer -= Time.deltaTime;
             TimerText.text = "Rainbow weapon: " + (int)timer;
+            TimerText.enabled = true;
 
-			if (flashActive) {
+            if (flashActive) {
 				if (flashCounter > flashLenght * 1f) {  //0.66 makes two blinks
 					TimerText.color = new Color (0.5f, 0f, 0f, 1f);	
 				} else if (timer > 3) {
@@ -90,7 +91,8 @@ public class WeaponSwitching : MonoBehaviour
 			{
 				previousSelectedWeapon = selectedWeapon;
 				selectedWeapon = 0;
-                Destroy(TimerText);
+                //Destroy(TimerText);
+                TimerText.enabled = false;
                 Keyboards.sprite = KeyboardOneDown;
 
                 if (previousSelectedWeapon != selectedWeapon)
