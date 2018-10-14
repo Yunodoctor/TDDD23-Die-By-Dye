@@ -15,6 +15,7 @@ TagManager:
   - Enemy
   - Boss
   - Keyboard
+  - Music
   layers:
   - Default
   - TransparentFX
