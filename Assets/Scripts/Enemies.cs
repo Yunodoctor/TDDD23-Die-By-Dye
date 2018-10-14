@@ -17,12 +17,14 @@ public class Enemies : MonoBehaviour
 
     public GameObject deathEffect; //Ifall vi vill ha det
     private int scorePoint = 10;
-
     //Enemy following player
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		Physics2D.IgnoreCollision (player.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
+
+
     }
 
     // Update is called once per frame
@@ -70,6 +72,7 @@ public class Enemies : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player.playerTakeDamage(1);
+
         }
     }
 }

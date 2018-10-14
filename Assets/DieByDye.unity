@@ -2124,6 +2124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 608639873}
   - component: {fileID: 608639872}
+  - component: {fileID: 608639874}
   m_Layer: 0
   m_Name: Stone2
   m_TagString: Untagged
@@ -2188,6 +2189,21 @@ Transform:
   m_Father: {fileID: 1239640060}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &608639874
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 608639871}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.084604144, y: 0.12610805}
+  serializedVersion: 2
+  m_Radius: 0.15487134
 --- !u!4 &625131460 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f,
@@ -2446,6 +2462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644730962}
   - component: {fileID: 644730961}
+  - component: {fileID: 644730963}
   m_Layer: 0
   m_Name: Stone4
   m_TagString: Untagged
@@ -2510,6 +2527,21 @@ Transform:
   m_Father: {fileID: 1239640060}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &644730963
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644730960}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.6948734, y: -0.13326313}
+  m_Size: {x: 0.79192746, y: 0.49367207}
+  m_Direction: 1
 --- !u!4 &661914398 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4392695001045084, guid: b21f5622c06ce463496877e2c263893f,
@@ -3136,7 +3168,7 @@ Transform:
   - {fileID: 1258940236}
   - {fileID: 579920557}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &865810175 stripped
 Transform:
@@ -4444,6 +4476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173746856}
   - component: {fileID: 1173746855}
+  - component: {fileID: 1173746857}
   m_Layer: 0
   m_Name: Stone1
   m_TagString: Untagged
@@ -4508,6 +4541,21 @@ Transform:
   m_Father: {fileID: 1239640060}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1173746857
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173746854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.22962816, y: -0.177005}
+  m_Size: {x: 0.86062807, y: 0.62599665}
+  m_Direction: 1
 --- !u!1001 &1176484666
 Prefab:
   m_ObjectHideFlags: 0
@@ -5100,12 +5148,6 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 114311201103688204, guid: aa88890a314a448d7852070c01b8ba70,
-        type: 2}
-      propertyPath: healthEffect
-      value: 
-      objectReference: {fileID: 1087451707055750, guid: f454f52734c5745bfb2c6fc33796c2f6,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa88890a314a448d7852070c01b8ba70, type: 2}
   m_IsPrefabParent: 0
@@ -5408,7 +5450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4811513941214354, guid: 3283374cf0684c743811307f2d336099, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114375375527846684, guid: 3283374cf0684c743811307f2d336099,
         type: 2}
