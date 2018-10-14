@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b90a1d86a1fca124dbb5f35e82e031c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwSpawns: 2
+  startTimeBtwSpawns: 3
   Trail:
   - {fileID: 1748100905940782, guid: e44a0287762ab04478dd209178dc0b0d, type: 2}
   - {fileID: 1560172895034050, guid: 4ec3e82fc90b7d347b92e55217dc774d, type: 2}
