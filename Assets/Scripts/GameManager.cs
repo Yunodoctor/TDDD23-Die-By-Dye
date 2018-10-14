@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
-    public float restartDelay = 2f;
     private ScoreManager theScoreManager;
 
     [SerializeField]
     private GameObject GameOverUI;
+
+    [SerializeField]
+    private GameObject OverlayUI;
 
     private void Start()
     {
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         GameOverUI.SetActive(true);
+        OverlayUI.SetActive(false);
     }
 
     public void Restart()
@@ -29,7 +32,6 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             Debug.Log("Restart");
-            //Invoke("Restart", restartDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             FindObjectOfType<ScoreManager>().StartScore();
         }
