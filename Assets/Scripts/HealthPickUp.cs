@@ -22,6 +22,7 @@ public class HealthPickUp : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("HealthPickUp");
             player.playerTakeHealth(1);
             Destroy(gameObject);
         }
