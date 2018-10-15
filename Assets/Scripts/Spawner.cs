@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour
 			
 				if (startTimeBtwSpawn > minTime) 
 				{
-					startTimeBtwSpawn -= decreaseTime;//Time between spawns will be a little bit smaller next time an enemy spawns
+					startTimeBtwSpawn -= decreaseTime; //Time between spawns will be a little bit smaller next time an enemy spawns
 				}
 			} 
 			else 

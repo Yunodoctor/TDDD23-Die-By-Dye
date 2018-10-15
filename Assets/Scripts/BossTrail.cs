@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BossTrail : MonoBehaviour {
 
+    public GameObject[] Trail;
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
-	public GameObject[] Trail;
-
+    
     private void Update()
     {
 
