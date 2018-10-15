@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     public float decreaseTime;
     public float minTime = 3f;
 	float timer = 0f;
-	float startSpawning = 20f;
+	float startSpawning = 15f;
 
     private Player player;
 
