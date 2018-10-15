@@ -18,9 +18,6 @@ public class WeaponSwitching : MonoBehaviour
     public int selectedWeapon = 0;
     private bool flashActive;
 	public float flashLenght;
-	private float flashCounter;
-
-	private bool isKeyEnable = true;
 
     void Start()
     {
@@ -67,21 +64,21 @@ public class WeaponSwitching : MonoBehaviour
             TimerText.enabled = true;
 
             if (flashActive) {
-				if (flashCounter > flashLenght * 1f) {  //0.66 makes two blinks
+				if (timer > flashLenght * 1f) {  //0.66 makes two blinks
 					TimerText.color = new Color (0.5f, 0f, 0f, 1f);	
-				} else if (timer > 3) {
+				} else if (timer > 4f) {
 					TimerText.color = new Color (1f, 1f, 1f, 1f);
 				}
-				else if (timer == 3) {
+				else if (timer >  3f) {
 					TimerText.color = new Color (0.5f, 0f, 0f, 1f);
 				}
-				else if (timer == 2) {
+				else if (timer >  2f) {
 					TimerText.color = new Color (1f, 1f, 1f, 1f);
 				}
-				else if (timer == 1) {
+				else if (timer >  1f) {
 					TimerText.color = new Color (0.5f, 0f, 0f, 1f);
 				}
-                else if(timer >= 0){
+				else if(timer > 0f){
 					TimerText.color = new Color (1f, 1f, 1f, 1f);	
 					flashActive = false;
 				}
@@ -100,7 +97,7 @@ public class WeaponSwitching : MonoBehaviour
 				}
 			}
 
-			flashCounter -= Time.deltaTime;
+
 
 		}
 
@@ -117,9 +114,7 @@ public void rainbowWeapon()
 			if (previousSelectedWeapon != selectedWeapon) {				
 				SelectWeapon ();
 			}
-
 		flashActive = true;
-		flashCounter = flashLenght;
 	}
 
     void SelectWeapon()
