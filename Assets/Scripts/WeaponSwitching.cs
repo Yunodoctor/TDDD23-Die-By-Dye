@@ -7,16 +7,16 @@ using UnityEngine.UI;
 
 public class WeaponSwitching : MonoBehaviour
 {
-    public int selectedWeapon = 0;
     private CompKeyboard keys;
     private CompKeyboard Hej;
     public Sprite KeyboardAllWhiteUp;
     public Sprite KeyboardOneDown;
     public Image Keyboards;
+    public Text TimerText;
 
     public float timer;
-    public Text TimerText;
-	private bool flashActive;
+    public int selectedWeapon = 0;
+    private bool flashActive;
 	public float flashLenght;
 	private float flashCounter;
 
