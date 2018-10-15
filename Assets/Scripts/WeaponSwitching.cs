@@ -91,7 +91,6 @@ public class WeaponSwitching : MonoBehaviour
 			{
 				previousSelectedWeapon = selectedWeapon;
 				selectedWeapon = 0;
-                //Destroy(TimerText);
                 TimerText.enabled = false;
                 Keyboards.sprite = KeyboardOneDown;
 
@@ -140,7 +139,4 @@ public void rainbowWeapon()
             i++;
         }
     }
-
-
-
 }
