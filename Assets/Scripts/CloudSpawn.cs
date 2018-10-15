@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossSpawn : MonoBehaviour {
+public class CloudSpawn : MonoBehaviour {
 
-	public GameObject bossSpawn;
+	public GameObject cloudSpawn;
 
 	private float timeBtwSpawn;
 	public float startTimeBtwSpawn;
 	float timer = 0f;
-	float startSpawning = 80f;
+	float startSpawning = 100f;
 
+	// Update is called once per frame
 	private void Update()
 	{
 		timer += Time.deltaTime;
@@ -19,13 +20,14 @@ public class BossSpawn : MonoBehaviour {
 		{
 			if (timeBtwSpawn <= 0) 
 			{
-				Instantiate (bossSpawn, transform.position, Quaternion.identity);
-				timeBtwSpawn = startTimeBtwSpawn; //Wait x amount of seconds before another boss spawn in game
+				Instantiate (cloudSpawn, transform.position, Quaternion.identity);
+				timeBtwSpawn = startTimeBtwSpawn; 
 			} 
 			else 
 			{
 				timeBtwSpawn -= Time.deltaTime;
 			}
 		}
+
 	}
 }
