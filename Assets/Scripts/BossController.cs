@@ -52,7 +52,8 @@ public class BossController : MonoBehaviour {
             Instantiate(deathEffectO, transform.position, Quaternion.identity);
             Instantiate(deathEffectP, transform.position, Quaternion.identity);
 
-            Destroy(gameObject);
+			Destroy(gameObject);
+            
             FindObjectOfType<WeaponSwitching>().rainbowWeapon();
             ScoreManager.scoreValue += scorePoint;
         }

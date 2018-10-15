@@ -9,14 +9,22 @@ public class PowerDownSlow : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-		Physics2D.IgnoreCollision (player.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
-        player.movementSpeed = 5f;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+
 		if (collision.CompareTag ("Player")) {
 			player.movementSpeed = 1f;
 		} 
     }
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+
+		if (other.CompareTag ("Player")) {
+			player.movementSpeed = 5f;
+
+		} 
+	}
 }

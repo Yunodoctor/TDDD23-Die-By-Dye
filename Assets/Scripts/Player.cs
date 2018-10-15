@@ -43,9 +43,6 @@ public class Player : MonoBehaviour
         //Use the two floats to create a new Vector2 variable movement
         Vector2 movementInput = new Vector2(moveHorizontal, moveVertical);
 
-        //Call the AddForce function of our rigid body supplying movement multiplied by speed to move our player
-		//rb2d.AddForce (movementInput*movementSpeed);
-        //kommentera bort
 		moveVelocity = movementInput.normalized * movementSpeed;
 	
 
@@ -92,8 +89,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         rb2d.MovePosition(rb2d.position + moveVelocity * Time.fixedDeltaTime);
-        //Movemenet without jitter
-        //rb2d.MovePosition(new Vector2((transform.position.x + moveVelocity.x * movementSpeed * Time.deltaTime), transform.position.y + moveVelocity.y * movementSpeed *Time.deltaTime));
+
     }
 
     public void playerTakeDamage(int dmg)
