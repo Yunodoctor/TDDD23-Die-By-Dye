@@ -10,7 +10,8 @@ public class Enemies : MonoBehaviour
     private Player player;
     public float stopDistance;
 	public float timeBtwDmg = 2.5f;
-
+	private float currentSpeed;
+	public float acceleration = 10f;
     //Drop
     public bool HealthDrop;
     public GameObject HealthDropObject;
@@ -31,8 +32,10 @@ public class Enemies : MonoBehaviour
         //Enemy moving towards player
         if (Vector2.Distance(transform.position, target.position) > stopDistance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime); //Move the enemies position towards the player position at a certain speed (from, to, speed). Time.deltaTime makes sure that the enemies won't run faster on a fast computer comparing to a slow
-        }
+
+			transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime); //Move the enemies position towards the player position at a certain speed (from, to, speed). Time.deltaTime makes sure that the enemies won't run faster on a fast computer comparing to a slow
+
+		}
 
         //If the enemy takes damage, destroy object
         if (health <= 0)
