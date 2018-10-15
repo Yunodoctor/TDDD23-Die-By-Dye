@@ -80,8 +80,8 @@ public class Player : MonoBehaviour
 
         //Check & correct if object is outside of screen boundaries
         Vector3 finalPosition = transform.position;
-        finalPosition.x = Mathf.Clamp(finalPosition.x, -12, 12);
-        finalPosition.y = Mathf.Clamp(finalPosition.y, -5, 5);
+        finalPosition.x = Mathf.Clamp(finalPosition.x, -8, 8);
+        finalPosition.y = Mathf.Clamp(finalPosition.y, -4, 4);
         transform.position = finalPosition;
     }
 
