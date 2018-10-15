@@ -9,11 +9,6 @@ public class BossTrail : MonoBehaviour {
 
 	public GameObject[] Trail;
 
-    void Start ()
-    {
-
-	}
-
     private void Update()
     {
 

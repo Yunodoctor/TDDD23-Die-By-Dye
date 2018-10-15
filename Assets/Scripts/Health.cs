@@ -13,13 +13,11 @@ public class Health : MonoBehaviour
     private int health;
     private int numOfHearts;
 
-    // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Max health

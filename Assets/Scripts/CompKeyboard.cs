@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CompKeyboard : MonoBehaviour
 {
-    //Sprites
     public Image Keyboards;
     public Sprite KeyboardOneDown;
     public Sprite KeyboardTwoDown;
@@ -18,7 +17,6 @@ public class CompKeyboard : MonoBehaviour
         Keyboards.sprite = KeyboardOneDown;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))

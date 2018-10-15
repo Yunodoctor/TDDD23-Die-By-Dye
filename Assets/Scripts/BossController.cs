@@ -25,7 +25,6 @@ public class BossController : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 	}
 
-	// Update is called once per frame
 	void Update () 
 	{
 		if(transform.position != endPoint.position)
@@ -45,21 +44,20 @@ public class BossController : MonoBehaviour {
 			timeBtwDamage -= Time.deltaTime;
 		}
 		healthBar.value = curHealth;
-		//if boss take healt is zero
-		if (curHealth <= 0)
-		{
+        //if boss take healt is zero
+        if (curHealth <= 0)
+        {
 
-			Instantiate(deathEffectG, transform.position, Quaternion.identity);
-			Instantiate(deathEffectB, transform.position, Quaternion.identity);
-			Instantiate(deathEffectO, transform.position, Quaternion.identity);
-			Instantiate(deathEffectP, transform.position, Quaternion.identity);
+            Instantiate(deathEffectG, transform.position, Quaternion.identity);
+            Instantiate(deathEffectB, transform.position, Quaternion.identity);
+            Instantiate(deathEffectO, transform.position, Quaternion.identity);
+            Instantiate(deathEffectP, transform.position, Quaternion.identity);
 
-			Destroy(gameObject);
-			FindObjectOfType<WeaponSwitching>().rainbowWeapon();
+            Destroy(gameObject);
+            FindObjectOfType<WeaponSwitching>().rainbowWeapon();
 
-			ScoreManager.scoreValue += scorePoint;
-		}
-
+            ScoreManager.scoreValue += scorePoint;
+        }
 	}
 
 	void OnTriggerEnter2D(Collider2D collision)
@@ -74,7 +72,6 @@ public class BossController : MonoBehaviour {
 
 	} 
 
-	//Health decrease system
 	public void bossTakeDamage(int damage)
 	{
 		curHealth -= damage;

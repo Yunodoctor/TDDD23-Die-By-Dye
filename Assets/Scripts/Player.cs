@@ -22,17 +22,12 @@ public class Player : MonoBehaviour
 
 	//Animation
 	public Animator ani;
-    // Use this for initialization
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
 		playerSprite = GetComponent<SpriteRenderer>();
-
-        //Full health at the start of the game
         curHealth = maxHealth;
     }
-
-    // Update is called once per frame
     void Update()
     {
         float moveHorizontal = Input.GetAxisRaw("Horizontal"); //Using GetAxisRaw to get a more robotic movement, no acceleration

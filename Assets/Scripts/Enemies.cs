@@ -24,15 +24,11 @@ public class Enemies : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 		Physics2D.IgnoreCollision (player.GetComponent<Collider2D> (), GetComponent<Collider2D> ());
-
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Enemy moving towards player
-
         if (Vector2.Distance(transform.position, target.position) > stopDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime); //Move the enemies position towards the player position at a certain speed (from, to, speed). Time.deltaTime makes sure that the enemies won't run faster on a fast computer comparing to a slow
@@ -58,24 +54,18 @@ public class Enemies : MonoBehaviour
         {
             movementSpeed = 0f;
         }
-
     }
 		
-    //Health decrease system
     public void enemyTakeDamage(int damage)
     {
         health -= damage;
         FindObjectOfType<AudioManager>().Play("EnemyDeathSound");
     }
 
-    //Collider enters the trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
 		if (collision.CompareTag ("Player")) {
 			player.playerTakeDamage (1);
-		
 		}
-
     }
 }

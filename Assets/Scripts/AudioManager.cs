@@ -15,7 +15,6 @@ public class AudioManager : MonoBehaviour {
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
         }
-
 	}
 	
     public void Play (string name)
@@ -23,5 +22,4 @@ public class AudioManager : MonoBehaviour {
         Sound s = Array.Find(sounds, Sound => Sound.name == name);
         s.source.Play();
     }
-
 }

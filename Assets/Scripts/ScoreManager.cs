@@ -9,9 +9,7 @@ public class ScoreManager : MonoBehaviour
     public Text highScore;
     public static int scoreValue = 0;
     public int highScoreValue = 0;
-    //private int scorePoint = 10;
-
-    // Use this for initialization
+    
     void Start()
     {
         if (PlayerPrefs.HasKey("HighScore"))
@@ -25,7 +23,6 @@ public class ScoreManager : MonoBehaviour
         scoreValue = 0;
     }
 
-    // Update is called once per frame
     void Update()
     { 
         if (scoreValue > highScoreValue)

@@ -11,7 +11,6 @@ public class BossSpawn : MonoBehaviour {
 	float timer = 80f;
 	float startSpawning = 1f;
 
-	// Update is called once per frame
 	private void Update()
 	{
 		timer += Time.deltaTime;
