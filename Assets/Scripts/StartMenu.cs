@@ -18,7 +18,7 @@ public class StartMenu : MonoBehaviour {
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("endis");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
     }
 
