@@ -424,12 +424,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd39b4ea49229054facd15df2a8dc14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedWeapon: 0
   KeyboardAllWhiteUp: {fileID: 21300000, guid: 6ea2c653a12d94545ba596ce61954ddd, type: 3}
   KeyboardOneDown: {fileID: 21300000, guid: 2666a00f3ff978b41bc04e933285f13d, type: 3}
   Keyboards: {fileID: 0}
-  timer: 0
   TimerText: {fileID: 0}
+  timer: 0
+  selectedWeapon: 0
   flashLenght: 10
 --- !u!114 &114116565216962118
 MonoBehaviour:
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1880332037361038, guid: 41d79639501624f29a59bb1ee6d03711, type: 2}
   shotPoint: {fileID: 4498366421031242}
-  startTimeBtwShots: 0.25
+  startTimeBtwShots: 0
   offset: 0
 --- !u!114 &114311201103688204
 MonoBehaviour:
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1683179904300216, guid: 72fc06d187186472dbcdd19b68a8f65b, type: 2}
   shotPoint: {fileID: 4271607710614828}
-  startTimeBtwShots: 0.25
+  startTimeBtwShots: 0
   offset: 0
 --- !u!212 &212163468551061860
 SpriteRenderer:
