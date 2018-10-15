@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 	public float flashLenght;
 	private float flashCounter;
 	private SpriteRenderer playerSprite;
-	public Sprite damageFace;
+
 
 	//Animation
 	public Animator ani;
@@ -66,22 +66,14 @@ public class Player : MonoBehaviour
 			if (flashCounter > flashLenght * .53f)  //0.66 makes two blinks
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);	
-				playerSprite.sprite = damageFace;
 			} 
-			//else if (flashCounter > flashLenght * .26f) 
-			//{
-				//playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
-				//playerSprite.color = new Color (1f, 1f, 1f, 1f);
-			//}
+
 			else if(flashCounter > 0f)
 			{
 				playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
-
-				//playerSprite.sprite = damageFace;
 			}
 			else 
 			{
-				//playerSprite.color = new Color (0.75f, 0.2f, 0.2f, 0.6f);
 				playerSprite.color = new Color (1f, 1f, 1f, 1f);	
 				flashActive = false;
 			}

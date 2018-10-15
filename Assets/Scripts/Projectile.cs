@@ -25,20 +25,16 @@ public class Projectile : MonoBehaviour {
 		if(hitInfo.collider != null){
 			//If the grey enemy get hits by a red projectile
 			if (hitInfo.collider.CompareTag ("EnemyGreen")) {
-				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
 			//If the yellow enemy get hits by a green projectile
 			if (hitInfo.collider.CompareTag ("EnemyOrange")) {
-				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
 			if (hitInfo.collider.CompareTag ("EnemyBlue")) {
-				Debug.Log ("ENEMY MUST TAKE DAMAGE!!");
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
 			if (hitInfo.collider.CompareTag ("EnemyPurple")) {
-				Debug.Log ("ENEMY PURPLE MUST TAKE DAMAGE!!");
 				hitInfo.collider.GetComponent<Enemies>().enemyTakeDamage(damage); //If the projectile collides with an enemy, call the TakeDamage function
 			}
 			if(hitInfo.collider.CompareTag("Boss"))
