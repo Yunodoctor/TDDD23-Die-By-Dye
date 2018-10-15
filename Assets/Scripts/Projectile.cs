@@ -10,12 +10,9 @@ public class Projectile : MonoBehaviour {
 	public int damage;
 	public LayerMask whatIsSolid; //Linear mask to ignore sertain colliders
 
-    public GameObject destroyEffect;
-
 	// Use this for initialization
 	private void Start () {
 		Invoke ("DestroyProjectile", lifeTime);
-
 	}
 
 	// Update is called once per frame
@@ -48,13 +45,10 @@ public class Projectile : MonoBehaviour {
 			{
 				hitInfo.collider.GetComponent<BossController>().bossTakeDamage(damage);
 			}
-
 			DestroyProjectile();
 		}
 
-
 		transform.Translate(Vector2.right * speed * Time.deltaTime); //Shoot in the right direction
-		
 	}
 
 	void DestroyProjectile() {

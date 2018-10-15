@@ -6,22 +6,25 @@ using UnityEngine.Audio;
 
 public class StartMenu : MonoBehaviour {
 
+    public string sceneName;
+    public Animator transitionAnim;
     public AudioMixer audioMixer;
-    public AudioMixer SFX;
 
-	public void PlayGame () {
+    public void PlayGame ()
+    {
+            StartCoroutine(LoadScene());
+    }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);		
-	}
+    IEnumerator LoadScene()
+    {
+        transitionAnim.SetTrigger("endis");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneName);
+    }
 
     public void SetVolume (float Volume)
     {
         audioMixer.SetFloat("Volume", Volume);
-    }
-
-    public void SetSFX(float SFXvolume)
-    {
-        SFX.SetFloat("SFX", SFXvolume);
     }
 
     public void QuitGame()
