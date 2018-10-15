@@ -7,17 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
-    private ScoreManager theScoreManager;
 
     [SerializeField]
     private GameObject GameOverUI;
     [SerializeField]
     private GameObject OverlayUI;
-
-    private void Start()
-    {
-        theScoreManager = FindObjectOfType<ScoreManager>();
-    }
 
     public void EndGame()
     {
