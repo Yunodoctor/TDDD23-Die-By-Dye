@@ -9,7 +9,7 @@ public class CloudSpawn : MonoBehaviour {
 	private float timeBtwSpawn;
 	public float startTimeBtwSpawn;
 	float timer = 0f;
-	float startSpawning = 150f;
+	float startSpawning = 160f;
 
 	// Update is called once per frame
 	private void Update()
