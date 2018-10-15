@@ -39,7 +39,6 @@ public class CompKeyboard : MonoBehaviour
             Keyboards.sprite = KeyboardFourDown;
         }
     }
-
 }
 
 

@@ -38,16 +38,15 @@ public class BossController : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		//give the player some time to recover before taking anymore damage
+		//Give the player some time to recover before taking anymore damage
 		if (timeBtwDamage > 0) 
 		{
 			timeBtwDamage -= Time.deltaTime;
 		}
 		healthBar.value = curHealth;
-        //if boss take healt is zero
+
         if (curHealth <= 0)
         {
-
             Instantiate(deathEffectG, transform.position, Quaternion.identity);
             Instantiate(deathEffectB, transform.position, Quaternion.identity);
             Instantiate(deathEffectO, transform.position, Quaternion.identity);
@@ -55,7 +54,6 @@ public class BossController : MonoBehaviour {
 
             Destroy(gameObject);
             FindObjectOfType<WeaponSwitching>().rainbowWeapon();
-
             ScoreManager.scoreValue += scorePoint;
         }
 	}
@@ -69,7 +67,6 @@ public class BossController : MonoBehaviour {
 				player.playerTakeDamage(1);
 			}
 		}
-
 	} 
 
 	public void bossTakeDamage(int damage)
@@ -77,6 +74,4 @@ public class BossController : MonoBehaviour {
 		curHealth -= damage;
         FindObjectOfType<AudioManager>().Play("EnemyDeathSound");
     }
-
-
 }

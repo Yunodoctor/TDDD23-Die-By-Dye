@@ -6,7 +6,6 @@ public class BossTrail : MonoBehaviour {
 
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
-
 	public GameObject[] Trail;
 
     private void Update()

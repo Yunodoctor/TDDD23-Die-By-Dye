@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public float offset; //Added to compensate if the weapon graphics doesnt point to mouse crusor
+    
 
     public GameObject projectile;
     public Transform shotPoint;
-    //public Sprite weaponSprite;
-	//public GameObject explosionEffect;
-    private float timeBtwShots;
-    public float startTimeBtwShots; //Change to set how often the player will be allowed to shoot projectiles
     private Player player;
 
-    // Use this for initialization
+    //public Sprite weaponSprite;
+    //public GameObject explosionEffect;
+
+    private float timeBtwShots;
+    public float startTimeBtwShots; //Change to set how often the player will be allowed to shoot projectiles
+    public float offset; //Added to compensate if the weapon graphics doesnt point to mouse crusor
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (player.curHealth > 0)

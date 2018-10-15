@@ -94,7 +94,6 @@ public class Player : MonoBehaviour
         finalPosition.x = Mathf.Clamp(finalPosition.x, -12, 12);
         finalPosition.y = Mathf.Clamp(finalPosition.y, -5, 5);
         transform.position = finalPosition;
-
     }
 
     //Another case: if we want the character to be kinetic
@@ -108,7 +107,6 @@ public class Player : MonoBehaviour
     public void playerTakeDamage(int dmg)
     {
         curHealth -= dmg;
-
 		flashActive = true;
 		flashCounter = flashLenght;
     }
