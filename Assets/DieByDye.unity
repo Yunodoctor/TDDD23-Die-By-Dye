@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudSpawn: {fileID: 1158309819899656, guid: 8aed0ae76ddc54ec68722128c3cd5b55, type: 2}
-  startTimeBtwSpawn: 160
+  startTimeBtwSpawn: 120
 --- !u!1 &132863616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4412,7 +4412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudSpawn: {fileID: 1866843713780890, guid: 53aff5a45ac01459c870fed131985aad, type: 2}
-  startTimeBtwSpawn: 160
+  startTimeBtwSpawn: 120
 --- !u!1001 &1031089657
 Prefab:
   m_ObjectHideFlags: 0

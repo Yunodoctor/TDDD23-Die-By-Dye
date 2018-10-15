@@ -474,7 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   curHealth: 5
-  maxHealth: 500
+  maxHealth: 5
   healthEffect: {fileID: 1087451707055750, guid: f454f52734c5745bfb2c6fc33796c2f6,
     type: 2}
   flashLenght: 1
