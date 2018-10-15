@@ -17,7 +17,7 @@ public class Enemies : MonoBehaviour
     public GameObject HealthDropObject;
     private float dropRate = 0.1f;
 
-    public GameObject deathEffect; //Ifall vi vill ha det
+    public GameObject deathEffect;
     private int scorePoint = 10;
     //Enemy following player
     void Start()

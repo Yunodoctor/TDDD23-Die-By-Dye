@@ -26,7 +26,6 @@ public class WeaponSwitching : MonoBehaviour
 
     void Update()
     {
-	
         int previousSelectedWeapon = selectedWeapon;
 
         if (timer <= 0)
