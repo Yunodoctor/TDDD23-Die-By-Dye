@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossSpawn: {fileID: 1101328727699468, guid: 41ae682d13a9545eb94969fbf6bb5417, type: 2}
-  startTimeBtwSpawn: 80
+  startTimeBtwSpawn: 100
 --- !u!4 &84536252
 Transform:
   m_ObjectHideFlags: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudSpawn: {fileID: 1158309819899656, guid: 8aed0ae76ddc54ec68722128c3cd5b55, type: 2}
-  startTimeBtwSpawn: 130
+  startTimeBtwSpawn: 150
 --- !u!1 &132863616
 GameObject:
   m_ObjectHideFlags: 0
@@ -3863,7 +3863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &945463386
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4402,7 +4402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudSpawn: {fileID: 1866843713780890, guid: 53aff5a45ac01459c870fed131985aad, type: 2}
-  startTimeBtwSpawn: 130
+  startTimeBtwSpawn: 150
 --- !u!1001 &1031089657
 Prefab:
   m_ObjectHideFlags: 0

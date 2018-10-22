@@ -9,7 +9,7 @@ public class BossSpawn : MonoBehaviour {
 	private float timeBtwSpawn;
 	public float startTimeBtwSpawn;
 	float timer = 0f;
-	float startSpawning = 60f;
+	float startSpawning = 90f;
 
 	private void Update()
 	{
